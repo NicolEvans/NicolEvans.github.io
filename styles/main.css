@@ -3,10 +3,10 @@ body {
 }
 
 header {
-  background: url(../images/hero-image.jpg) center / cover;
+  background: linear-gradient(180deg, #FFC4A4, #FFFFFF);
   height: 60vh;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 h1 {
