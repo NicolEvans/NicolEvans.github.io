@@ -7,30 +7,30 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
-    <!--Material Design Lite-->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Reset -->
+    <link rel="stylesheet" href="styles/reset.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Martel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,medium,semibold,bold|Martel">
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/case-studies.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
 
   <body>
 
 <!-- Navigation -->
-      <nav>
-        <ul>
-          <li><a href="index.html"><img src="images/NE_Logo_Teal.png" alt="Nicole Evans logo"></a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">contact me</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul class="container topnav">
+        <li class="logo"><a href="index.html"><img class="logo" src="images/NE_Logo_Teal.png" alt="Nicole Evans logo"></a></li>
+        <li class="about"><a class="topnav about" href="">about</a></li>
+        <li class="contact"><a class="topnav" href="">contact me</a></li>
+      </ul>
+    </nav>
 
     <main>
 <!-- hero -->
@@ -48,7 +48,7 @@
       <section>
         <h3>Problem</h3>
         <p>
-          Current cloud storage providers don’t offer the ability to save, share, and organize the content you discover online.
+          Current cloud storage providers do not offer the ability to save, share, and organize the content you discover online.
           Revisiting an item that you shared or has been shared with you can require endless scrolling through a thread or relying on your memory of where it came from.
         </p>
         <h3>Solution</h3>
@@ -249,25 +249,26 @@
       </section>
 
     </main>
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-        <li>
-          <a href="https://www.linkedin.com/in/nicole-evans-388243ba/">
+    <footer class="container">
+      <ul class="footer">
+        <li class="footer">
+          <a class="footer" href="https://www.linkedin.com/in/nicole-evans-388243ba/">
             <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
-        <li>
-          <a href="https://github.com/NicolEvans">
+        <li class="footer">
+          <a class="footer "href="https://github.com/NicolEvans">
             <i class="fab fa-github" aria-hidden="true"></i>
           </a>
         </li>
-        <li>
-          <a href="mailto:niclsevans@gmail.com">
+        <li class="footer">
+          <a class="footer" href="mailto:niclsevans@gmail.com">
             <i class="fas fa-envelope" aria-hidden="true"></i>
           </a>
         </li>
+        </li>
       </ul>
-      <h6>Designed & Developed by Nicole Evans</h6>
+      <h6 class="footer">Designed & Developed by Nicole Evans</h6>
     </footer>
   </body>
   </html>
