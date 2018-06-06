@@ -1,0 +1,184 @@
+nav {
+  background-color: hsla(0, 100%, 100%, 1.0);
+}
+
+main {
+
+  line-height: 135%;
+}
+
+img.caselogo {
+  margin: 0em;
+  height: 65px;
+  padding: 4em 0 0 16px;
+  width: 218px;
+}
+
+h2, h3, h4, h5 {
+  font-weight: bold;
+  letter-spacing: .05em;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+h4.hero {
+  margin-bottom: 2em;
+}
+
+h3.hero {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+p.hero {
+  margin-bottom: 2em;
+}
+
+img {
+  display: block;
+  margin: 0em auto;
+  max-width: 100%;
+}
+
+p {
+  line-height: 175%;
+  margin-bottom: 3em;
+  padding: 0 16px 0 16px
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+article {
+  margin-bottom: 4em;
+}
+
+h3.problem {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0.5em;
+}
+
+.button {
+  border: .16em solid hsla(8, 100%, 62%, 1.0);
+  box-sizing: border-box;
+  color: hsla(0, 0%, 0%, 1.0);
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: regular;
+  height: auto;
+  letter-spacing: .1em;
+  margin-left: 16px;
+  padding: 0.5em 2em;
+}
+
+section.process {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75px 35px 135px 35px;
+  margin-top: 3em;
+}
+
+article.process {
+  background-image: url(../images/cache/process-banner-long.png);
+  background-repeat: none;
+  background-size: cover;
+  height: 275px;
+  grid-column: 1 / -1;
+  grid-row: auto;
+}
+
+h2.process {
+  color: hsla(189, 97%, 14%, 1.0);
+  grid-column: 1 / -1;
+  grid-row-start: 2;
+}
+
+div.process {
+  color: hsla(189, 97%, 14%, 1.0);
+  grid-column: 1 / -1;
+  grid-row: auto;
+  line-height: 150%;
+  padding-left: 20px;
+ }
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  border-bottom: .2em solid hsla(174, 31%, 73%, 1.0);
+  margin-bottom: 1.5em;
+  padding-bottom: .25em;
+}
+
+h4 {
+  margin-bottom: .75em;
+}
+
+div.twocolumn {
+  display: grid;
+  grid-template-columns: 16px 80px 1fr 16px;
+  grid-column-gap: 10px;
+  grid-template-rows: auto auto;
+}
+
+img.twocolumn {
+  height: 80px;
+  width: 80px;
+  grid-column-start: 2;
+}
+
+p.nospace {
+  margin-bottom: 0em;
+}
+
+
+.spacing {
+  margin: 2em auto 2em auto;
+}
+
+
+.thin {
+  display: inline-block;
+  max-width: 48%;
+}
+
+figure {
+  margin: 0 auto 3em auto;
+}
+
+figcaption {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: .25em auto .75em auto;
+}
+
+img.intro {
+  border: .1em solid hsla(0, 0%, 90%, 1.0);
+  display: inline-block;
+  margin-bottom: 1em;
+  max-width: 48%;
+}
+
+section.conclusion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 80px 30px;
+  width: 100%;
+}
+
+article.conclusion {
+  background-image: url(../images/cache/conclusion-banner-mobile.png);
+  background-size: cover;
+  background-repeat: none;
+  grid-column: 1 / -1;
+  height: 141px;
+}
+
+h2.conclusion {
+  color: hsla(189, 97%, 14%, 1.0);
+  grid-row-start: 2;
+  margin: auto 16px;
+}

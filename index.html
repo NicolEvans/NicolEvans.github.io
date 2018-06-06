@@ -5,79 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <!--Material Design Lite-->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Reset -->
+    <link rel="stylesheet" href="styles/reset.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Martel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,medium,semibold,bold|Martel">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
 <!-- Header and Navigation -->
-    <header class="mdl-layout__header mdl-layout__header--transparent">
+    <header>
       <nav>
-        <ul>
-          <li><a href="index.html"><img src="images/NE_Logo_Teal.png" alt="Nicole Evans logo"></a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">contact me</a></li>
+        <ul class="container topnav">
+          <li><a href="index.html"><img class="logo "src="images/NE-logo-teal.png" alt="Nicole Evans logo"></a></li>
+          <li class="about"><a class="topnav about" href="">about</a></li>
+          <li class="contact"><a class="topnav" href="">contact me</a></li>
         </ul>
       </nav>
-      <h1>Hi! <br> I'm Nicole Evans, a UX Designer based in <s>New York City</s> Colorado.</h1>
+      <div class="container">
+        <h1 class="landing">Hi! <br> I'm Nicole Evans, a UX Designer based in <s>New York City</s> Colorado.</h1>
+      </div>
     </header>
 
     <main>
 <!-- Case Studies -->
-      <section>
-        <h3>Featured Case Studies</h3>
-        <article>
-          <a href="">
-            <h3>Cache</h3>
-            <h5>an iOS mobile <br> application</h5>
-          </a>
-        </article>
+      <section class="cases">
+        <h3 class="featured">Featured Case Study</h3>
 
-        <article>
-          <a href="">
-            <h3>Project <br> Name</h3>
-            <h5>description</h5>
-          </a>
-        </article>
+        <a class="cache" href="">
+          <article class="casegrid">
+            <div class="title">
+              <h3 class="project">Cache</h3>
+              <h5 class="description">an iOS mobile <br> application</h5>
+            </div>
+            <h5 class="view">view the case study</h5>
+          </article>
+        </a>
 
-        <article>
-          <a href="">
-            <h3>Project <br> Name</h3>
-            <h5>description</h5>
-          </a>
-        </article>
+<!-- Additional Projects
+        <a class="projecttwo" href="">
+          <article class="casegrid">
+            <div class="title">
+              <h3 class="project">Project <br> Name</h3>
+              <h5 class="description">description</h5>
+            </div>
+            <h5 class="view">view the case study</h5>
+          </article>
+        </a>
+
+        <a class="projectthree" href="">
+          <article class="casegrid">
+            <div class="title">
+              <h3 class="project">Project <br> Name</h3>
+              <h5 class="description">description</h5>
+            </div>
+            <h5 class="view">view the case study</h5>
+          </article>
+        </a>
+-->
       </section>
     </main>
 
+
 <!-- Footer -->
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-        <li>
-          <a href="https://www.linkedin.com/in/nicole-evans-388243ba/">
+    <footer class="container">
+      <ul class="footer">
+        <li class="footer">
+          <a class="footer" href="https://www.linkedin.com/in/nicole-evans-388243ba/">
             <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
-        <li>
-          <a href="https://github.com/NicolEvans">
+        <li class="footer">
+          <a class="footer "href="https://github.com/NicolEvans">
             <i class="fab fa-github" aria-hidden="true"></i>
           </a>
         </li>
-        <li>
-          <a href="mailto:niclsevans@gmail.com">
+        <li class="footer">
+          <a class="footer" href="mailto:niclsevans@gmail.com">
             <i class="fas fa-envelope" aria-hidden="true"></i>
           </a>
         </li>
+        </li>
       </ul>
-      <h6>Designed & Developed by Nicole Evans</h6>
+      <h6 class="footer">Designed & Developed by Nicole Evans</h6>
     </footer>
   </body>
   </html>

@@ -1,52 +1,198 @@
 body {
-  padding-bottom: 5rem;
+  font-family: 'Martel', serif;
+  font-size: 16px;
 }
 
 header {
-  background: linear-gradient(180deg, #FFC4A4, #FFFFFF);
+  background: linear-gradient(180deg, hsla(21, 100%, 82%, 1.0), hsla(0, 0%, 100%, 1.0));
   height: 60vh;
   justify-content: center;
   text-align: left;
 }
 
-h1 {
-  color: hsla(0, 0%, 100%, 0.9);
-  font-weight: bold;
+a {
+  text-decoration: none;
 }
 
-.slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 1.6rem;
-}
-
-main {
-  max-width: 900px;
-}
-
-.project-description {
-  padding-left: 0;
-}
-
-.project img {
+nav {
+  background-color: hsla(21, 100%, 82%, 0.9);
+  position: fixed;
   width: 100%;
 }
 
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: 0.5rem;
-  position: fixed;
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+}
+
+ul.topnav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7em;
+  font-weight: regular;
+  padding: 0.5em 0px;
+}
+
+a.topnav {
+  color: hsla(189, 97%, 14%, 1.0);
+  letter-spacing: 2px;
+}
+
+.logo {
+  grid-column-start: 1;
+  height: 22px;
+  margin: 5px 0px 0px 16px;
+  width: 35px;
+}
+
+.about {
+  grid-column-start: 5;
+  margin-top: 12px;
+}
+
+li.contact {
+  border: 0.09em solid hsla(189, 97%, 14%, 1.0);
+  box-sizing: border-box;
+  grid-column: 6 / -1;
+  height: auto;
+  margin: 5px 8px 0px 0px;
+  padding: 0.5em;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1.landing {
+  color: hsla(189, 97%, 14%, 1.0);
+  font-size: 1.5em;
+  font-weight: bold;
+  grid-column: 1 / -2;
+  grid-row-start: 2;
+  line-height: 140%;
+  padding-top: 30%;
+  padding-left: 16px;
+}
+
+/* Three projects
+.cases {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 16px;
+  grid-template-rows: 50px 200px 200px 25px 200px 200px 25px 200px 200px;
+  margin-bottom: 2em;
+  padding: 0px 16px 0px 16px;
+}
+*/
+
+.cases {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 16px;
+  grid-template-rows: 50px 200px 200px;
+  margin-bottom: 2em;
+  padding: 0px 16px 0px 16px;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h3.featured {
+  font-weight: bold;
+  grid-column: 1 / -1;
+  color: hsla(189, 97%, 14%, 1.0);
+}
+
+
+a.cache {
+  background-image: url("../images/cache-square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / -1;
+  grid-row: 2 / span 2;
+}
+
+.casegrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 200px 200px;
+  grid-column-gap: 16px;
+}
+
+.title {
+  color: hsla(0, 100%, 100%, 1.0);
+  grid-column: auto / span 2;
+  padding: 1em;
+}
+
+.project {
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.description {
+  font-size: .75em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 115%;
+}
+
+.view {
+  color: hsla(0, 100%, 100%, 1.0);
+  grid-column: 4 / 7;
+  grid-row-start: 2;
+  padding-top: 35%;s
+}
+
+a.projecttwo {
+  background-image: url("../images/p2-square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / -1;
+  grid-row: 5 / span 2;
+}
+
+a.projectthree {
+  background-image: url("../images/p3-square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / -1;
+  grid-row: 8 / span 2;
+}
+
+footer {
+  background: linear-gradient(90deg, hsla(189, 97%, 14%, 1.0), hsla(179, 100%, 23%, 1.0));
+  color: hsla(0, 0%, 100%, 1.0);
+  padding: 0.5em 0px 0.5em 0px;
   width: 100%;
   z-index: 1;
 }
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 2rem;
+ul.footer {
+  grid-column: 1 / -1;
+  padding: 0.5em 0em;
+  text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
-  }
+li.footer {
+  display: inline;
+  padding: 1em;
+}
+
+a.footer {
+  color: hsla(0, 0%, 100%, 1.0);
+  font-size: 1.5em;
+}
+
+h6.footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: .75em;
+  font-weight: regular;
+  grid-column: 1 / -1;
+  grid-row-start: 2;
+  padding: .5em 0em .75em 0em;
+  text-align: center;
 }
