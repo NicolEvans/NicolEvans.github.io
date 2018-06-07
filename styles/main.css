@@ -76,6 +76,19 @@ h1.landing {
   padding-left: 16px;
 }
 
+h1.aboutme {
+  color: hsla(189, 97%, 14%, 1.0);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 25%;
+  padding-left: 16px;
+}
+
+img.aboutme {
+  margin: 2em 16px;
+  max-width: 90%;
+}
+
 /* Three projects
 .cases {
   display: grid;
