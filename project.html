@@ -27,7 +27,7 @@
 <!-- Navigation -->
     <nav>
       <ul class="container topnav">
-        <li class="logo"><a href="index.html"><img src="images/NE-logo-teal.png" alt="Nicole Evans logo"></a></li>
+        <li class="logo"><a href="index.html"><img class="ne" src="images/NE-logo-teal.png" alt="Nicole Evans logo"></a></li>
         <li class="about"><a class="topnav about" href="">about</a></li>
         <li class="contact"><a class="topnav" href="">contact me</a></li>
       </ul>
@@ -36,30 +36,36 @@
     <main>
 <!-- hero -->
       <section>
-        <article>
+        <article class="hero">
           <img class="caselogo" src="images/cache/logo.png" alt="Cache Logo">
           <h4 class="hero">A new way to store and organize the digital items you share.</h4>
-          <h3 class="hero">Role</h3>
-          <p class="hero">UX Design, Branding</p>
-          <h3 class="hero">Tools</h3>
-          <p class="hero">Figma, inVision, Draw.io</p>
-          <img src="images/cache/hero-mockup.png" alt="Mockup of the Cache application dashboard">
+          <h3 class="hero role">Role</h3>
+          <p class="hero role">UX Design, Branding</p>
+          <h3 class="hero tools">Tools</h3>
+          <p class="hero tools">Figma, inVision, Draw.io</p>
+          <img class="hero" src="images/cache/hero-mockup.png" alt="Mockup of the Cache application dashboard">
         </article>
       </section>
 
 <!-- Problem Solution -->
       <section>
-        <h3 class="problem">Problem</h3>
-        <p>
-          Current cloud storage providers do not offer the ability to save, share, and organize the content you discover online.
-          Revisiting an item that you shared or has been shared with you can require endless scrolling through a thread or relying on your memory of where it came from.
-        </p>
-        <h3 class="problem">Solution</h3>
-        <p>
-          Cache is an iOS mobile application that provides a one-stop-shop to store and retrieve the content shared between you and small groups of family and friends.
-          Send articles or funny videos straight from the mobile web browser and Cache will automatically store and organize the content for you.
-        </p>
-        <a class="button" target="_blank" href="https://invis.io/2EGN5NCVF3H">view prototype</a>
+        <article class="prob-sol">
+          <div class="problem">
+            <h3 class="problem">Problem</h3>
+            <p class="solution">
+              Current cloud storage providers do not offer the ability to save, share, and organize the content you discover online.
+              Revisiting an item that you shared or has been shared with you can require endless scrolling through a thread or relying on your memory of where it came from.
+            </p>
+          </div>
+          <div class="solution">
+            <h3 class="problem">Solution</h3>
+            <p class="solution">
+              Cache is an iOS mobile application that provides a one-stop-shop to store and retrieve the content shared between you and small groups of family and friends.
+              Send articles or funny videos straight from the mobile web browser and Cache will automatically store and organize the content for you.
+            </p>
+          </div>
+            <a class="button prototype" target="_blank" href="https://invis.io/2EGN5NCVF3H">view prototype</a>
+        </article>
       </section>
 
 <!-- The Process -->
@@ -67,154 +73,145 @@
         <article class="process">
         </article>
         <h2 class="process">The Process</h2>
-        <div class="process">
-          <h5>Research</h5>
-          <h5>Information Architecture</h5>
-          <h5>Branding</h5>
-          <h5>High Fidelity Prototype</h5>
+        <ul class="process">
+          <li class="process">Research</li>
+          <li class="process">Information Architecture</li>
+          <li class="process">Branding</li>
+          <li class="process">High Fidelity Prototype</li>
         </div>
       </section>
 
 <!-- Research -->
-      <section>
-        <h3>Research</h3>
-        <article>
-          <h4>Competitive Analysis</h4>
-          <p>
+      <section class="research">
+        <h3 class="three-fifteen">Research</h3>
+          <h4 class="c-a">Competitive Analysis</h4>
+          <p class="c-a-p-one">
             I prepared a SWOT Analysis of three competitors.
             Dropbox and Google Drive are two of the biggest names in cloud storage service and Pinterest catalogues and collects items found on the web.
-          <br><br>
+          </p>
+          <p class="c-a-p-two">
             I saw an opportunity for a new type of product: an application that organizes content by tags or labels as opposed to folders.
             Removing the folder system that drives competitor's applications allows users to retrieve content with greater ease.
             Tags will automatically be created from the metadata of the file, such as title, location, author, website, and date.
           </p>
-        </article>
 
-        <article>
-          <h4>Surveys and Interviews</h4>
-          <p>
+          <h4 class="surveys">Surveys and Interviews</h4>
+          <p class="surveys-p">
             I needed to figure out if people would even use an application like Cache.
             The survey results showed that 50% of survey takers are sharing discovered content with close friends and family at least once a week.
             They're  also sharing photos taken with their smartphone. Survey results and interviews also revealed a desire for easy organization and revisiting.
           </p>
-          <div class="twocolumn">
+          <div class="twocolumn charts">
             <img class="twocolumn" src="images/cache/eighty-percent.png" alt="Eighty Percent Doughnut Chart">
             <p>respondents who save content they discover online</p>
             <img class="twocolumn" src="images/cache/forty-five-percent.png" alt="Forty-five Percent Doughnut Chart">
-            <p class="nospace">respondents who don't organize their bookmarks because it is too time consuming</p>
+            <p>respondents who don't organize their bookmarks because it is too time consuming</p>
           </div>
-        </article>
 
-        <article>
-          <h4>Personas</h4>
-            <p>
+          <h4 class="personas">Personas</h4>
+            <p class="personas-p">
               I created two personas, one centered on photos and the other on articles.
               Their main focus is the content itself, which needs to be easily stored and retrieved.
             </p>
-            <div class="twocolumn">
+
+            <div class="twocolumn persona-one">
               <img class="twocolumn" src="images/cache/bill.png" alt="User Persona Bill">
               <div>
-                <h5>Bill<br>Article Reader and Sharer</h5>
+                <h6>Bill: Article Reader and Sharer</h6>
                 <p>"Reading and learning is part of my everyday life. I'm looking for a quick and easy way to save and share what I find."</p>
               </div>
+            </div>
+            <div class="twocolumn persona-two">
               <img class="twocolumn" src="images/cache/mary.png" alt="User Persona Mary">
               <div>
-                <h5>Mary<br>Photo Sharer and Saver</h5>
+                <h6>Mary: Photo Sharer and Saver</h6>
                 <p>"Sending photos is how my family and I share our life experiences with each other since we don't live near one another."</p>
               </div>
             </div>
-            <a class="button" target="_blank" href="https://drive.google.com/open?id=16_QOa0z4h8mUVbqzSMoqdGbv6bSIMD_H">view user personas</a>
-          </article>
+
+            <a class="button personas" target="_blank" href="https://drive.google.com/open?id=16_QOa0z4h8mUVbqzSMoqdGbv6bSIMD_H">view user personas</a>
       </section>
 
 <!-- Information Architecture -->
-      <section>
-        <h3>Information Architecture</h3>
-        <article>
-          <h4>User Stories</h4>
-          <p>
+      <section class="ia">
+        <h3 class="three-fifteen">Information Architecture</h3>
+
+          <h4 class="userstory">User Stories</h4>
+          <p class="userstory-p">
             I developed user stories for new, returning, and all users. I took all of the high level stories and a few medium levels to round out a Minimum Viable Product.
           </p>
-          <img class="spacing" src="images/cache/user-stories-new.png" alt="Minimum Viable Product Stories for new users">
-          <img src="images/cache/user-stories-all.png" alt="Minimum Viable Product Stories for all users">
-          <img class="spacing" src="images/cache/user-stories-returning.png" alt="Minimum Viable Product for returning users">
-          <a class="button" target="_blank" href="https://drive.google.com/open?id=153EAu8Y2eREwnXTzVT1TSqvlmD1AfBCB">view user stories</a>
-        </article>
+          <img class="spacing userstory-one" src="images/cache/user-stories-new.png" alt="Minimum Viable Product Stories for new users">
+          <img class="userstory-two" src="images/cache/user-stories-all.png" alt="Minimum Viable Product Stories for all users">
+          <img class="spacing userstory-three" src="images/cache/user-stories-returning.png" alt="Minimum Viable Product for returning users">
+          <a class="button userstories" target="_blank" href="https://drive.google.com/open?id=153EAu8Y2eREwnXTzVT1TSqvlmD1AfBCB">view user stories</a>
 
-        <article>
-          <h4>User Flows</h4>
-          <p>
+          <h4 class="userflow">User Flows</h4>
+          <p class="userflow-p">
             I created user flows in Draw.io  based on those MVP user stories to figure out how users will interact with the application and ensure tasks were not getting overly complicated.
           </p>
-          <img class="spacing" src="images/cache/site-map.png" alt="Site map for the mobile application">
-          <img src="images/cache/user-flow-find-item.png" alt="User flow to find an item">
-          <img class="spacing" src="images/cache/user-flow-share.png" alt="User flow to share an item discovered online">
-          <a class="button" target="_blank" href="https://drive.google.com/open?id=1QPuw4JNYDLcetetIQef6XWtg60iBuA7h">view user flows</a>
-        </article>
+          <img class="spacing sitemap" src="images/cache/site-map.png" alt="Site map for the mobile application">
+          <img class="userflow-one"src="images/cache/user-flow-find-item.png" alt="User flow to find an item">
+          <img class="spacing userflow-two" src="images/cache/user-flow-share.png" alt="User flow to share an item discovered online">
+          <a class="button userflows" target="_blank" href="https://drive.google.com/open?id=1QPuw4JNYDLcetetIQef6XWtg60iBuA7h">view user flows</a>
 
-        <article>
-          <h4>Wireframes</h4>
-          <p>
+
+          <h4 class="wireframes">Wireframes</h4>
+          <p class="wireframes-p">
             I sketched out basic screen layouts, then cleaned them up in Figma, and created a low fidelity clickable prototype in InVision for testing.
             There were a few things to learn from this first round of testing such as the lack of a navigation bar and that the words "tag" and "share" made users think of social media, which meant the concept was not clear.
             I also learned to use Apple's Human Interface Guidelines more, not just in the visual design but the function as well.
             It also showed me that I needed to offer an opportunity for users to experience the application before signing up, so I created an introduction that used screen grabs of the mockups to show users what to expect.
           </p>
-          <img src="images/cache/wireframes-sketch.png" alt="Example of hand drawn sketches of screen wireframes">
-          <img class="spacing" src="images/cache/wireframe-item-view.png" alt="Wireframe of item view screen">
-          <img src="images/cache/wireframe-add-tag.png" alt="Wireframe of add label popover screen">
-          <img class="spacing" src="images/cache/wireframe-two-tags.png" alt="Wireframe of the screen displaying search results for two labels">
-          <a class="button" target="_blank" href="https://invis.io/XWG0MBJASQR">view lo fi prototype</a>
-        </article>
+          <img class="sketch" src="images/cache/wireframes-sketch.png" alt="Example of hand drawn sketches of screen wireframes">
+          <img class="spacing wireframe-one" src="images/cache/wireframe-item-view.png" alt="Wireframe of item view screen">
+          <img class="wireframe-two" src="images/cache/wireframe-add-tag.png" alt="Wireframe of add label popover screen">
+          <img class="spacing wireframe-three" src="images/cache/wireframe-two-tags.png" alt="Wireframe of the screen displaying search results for two labels">
+          <a class="button wireframes" target="_blank" href="https://invis.io/XWG0MBJASQR">view lo fi prototype</a>
       </section>
 
 <!-- Branding -->
-      <section>
-        <h3>Branding</h3>
-        <article>
-          <p>
+      <section class="branding">
+        <h3 class="three-fifteen">Branding</h3>
+          <p class="branding-p">
             This is a utility application where I wanted to provide a non-distracting environment for users to find what they are looking for.
             My goal was to create something clean and simple. While the brand has its own typography, I used Apple's SF Pro Text for the application itself.
           </p>
-          <img alt=""src="images/cache/branding-logos.png" alt="Cache logos">
-          <img class="spacing" src="images/cache/branding-icons.png" alt="Cache color palette, application icons and buttons">
-          <a class="button" target="_blank" href="https://drive.google.com/open?id=1PB1q4JQ1DQM7Wu8qXMBLhj6ZdRkSlpYh">view style guide</a>
-        </article>
+          <img class="branding-one" alt=""src="images/cache/branding-logos.png" alt="Cache logos">
+          <img class="spacing branding-two" src="images/cache/branding-icons.png" alt="Cache color palette, application icons and buttons">
+          <a class="button branding" target="_blank" href="https://drive.google.com/open?id=1PB1q4JQ1DQM7Wu8qXMBLhj6ZdRkSlpYh">view style guide</a>
       </section>
 
 <!-- High Fidelity Prototype -->
-      <section>
-        <h3>High Fidelity Prototype</h3>
-        <article>
-          <p>
+      <section class="hifi">
+        <h3 class="three-fifteen">High Fidelity Prototype</h3>
+          <p class="hifi-p">
             I took the wireframes and content I created for the marketing website and added visual design.
             I also took the feedback from testing the low fidelity prototype to update the screens and added visual design elements.
             I then created a clickable prototype with these high fidelity mockups to test again, which led to additional updates.
           </p>
-          <figure>
+          <figure class="site">
             <img src="images/cache/marketing-site-mockup.png" alt="High fidelity mockup of the marketing site">
             <figcaption class="spacing">marketing site</figcaption>
-            <a class="button" target="_blank" href="https://invis.io/YPK1US178MR">view site prototype</a>
           </figure>
+          <a class="button site" target="_blank" href="https://invis.io/YPK1US178MR">view site prototype</a>
 
-        <article>
-          <h4>Testing Results</h4>
-          <p>
+          <h4 class="results">Testing Results</h4>
+          <p class="results-p">
             When testing the high fidelity mockups, testers only quickly glanced at the introduction and still didn't fully understand the concept of the application.
             I updated the "email" references to remove existing associations in an attempt to clarify the concept.
             I also didn't have an empty state for the application and testers were confused when they signed up for an account then entered into a returning user's experience.
           </p>
-          <figure>
+          <figure class="results-one">
             <img class="thin" src="images/cache/dashboard-mockup-1.png" alt="First iteration of the high fidelity dashboard mockup">
             <img class="thin" src="images/cache/dashboard-mockup-2.png" alt="Last iteration of the high fideltiy dashboard mockup">
             <figcaption>first and last iteration of the dashboard</figcaption>
           </figure>
-          <figure>
+          <figure class="results-two">
             <img class="thin" src="images/cache/share-mockup-1.png" alt="First iteration of the high fidelity share screen mockup">
             <img class="thin"src="images/cache/share-mockup-2.png" alt="Last iteration of the high fidelity share screen mockup">
             <figcaption>first and last iteration of the share screen</figcaption>
           </figure>
-          <figure>
+          <figure class="results-three">
             <img class="thin" src="images/cache/account-mockup-1.png" alt="First iteration of the high fidelity my account mockup screen">
             <img class="thin" src="images/cache/account-mockup-2.png" alt="Last iteration of the high fidelity my account mockup screen">
             <figcaption>first and last iteration of the my account screen</figcaption>
@@ -247,8 +244,8 @@
         <h2 class="conclusion">Conclusion</h2>
       </section>
 
-      <section>
-        <article>
+      <section class="ending">
+        <article class="learnings">
           <h4>Key Learnings</h4>
           <p>
             The first key lesson was the importance of telling your brand story.
@@ -263,7 +260,7 @@
           </p>
         </article>
 
-        <article>
+        <article class="next-steps">
           <h4>Next Steps</h4>
           <p>
             In the end, users had a harder time understanding the concept of the application than I expected, but I was relieved that they were still able to navigate through the application and complete most tasks without problems.
