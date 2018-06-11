@@ -5,7 +5,7 @@ body {
 
 header {
   background: linear-gradient(180deg, hsla(21, 100%, 82%, 1.0), hsla(0, 0%, 100%, 1.0));
-  height: 40vh;
+  height: 50vh;
   justify-content: center;
   text-align: left;
 }
@@ -294,9 +294,6 @@ h6.footer {
 }
 
 h6.footer {
-  font-family: 'Poppins', sans-serif;
-  font-size: .75em;
-  font-weight: regular;
   grid-column: 7 / -1;
   grid-row:auto;
   padding-right: 16px;
