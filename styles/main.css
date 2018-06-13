@@ -4,8 +4,8 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, hsla(21, 100%, 82%, 1.0), hsla(0, 0%, 100%, 1.0));
-  height: 40vh;
+  background: linear-gradient(180deg, hsla(21, 100%, 82%, 0.9), hsla(0, 0%, 100%, 0.9));
+  height: auto;
   justify-content: center;
   text-align: left;
 }
@@ -74,12 +74,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.landing {
   color: hsla(189, 97%, 14%, 1.0);
-  font-size: 1.25em;
+  font-size: 1.35em;
   font-weight: bold;
-  grid-column: 1 / -2;
+  grid-column: 1 / 9;
   grid-row-start: 2;
-  line-height: 110%;
+  line-height: 140%;
   padding-top: 30%;
+  padding-bottom: 20%;
   padding-left: 16px;
 }
 
@@ -127,7 +128,7 @@ a.aboutme {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-column-gap: 16px;
-  grid-template-rows: 50px 200px 200px;
+  grid-template-rows: 3em auto auto;
   margin-bottom: 2em;
   padding: 0px 16px 0px 16px;
 }
@@ -149,12 +150,13 @@ a.cache {
   background-size: cover;
   grid-column: 1 / -1;
   grid-row: 2 / span 2;
+  max-width: 100%;
 }
 
 .casegrid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 11em 11em;
   grid-column-gap: 8px;
 }
 
@@ -250,6 +252,11 @@ h6.footer {
     grid-column: 8 / -1;
   }
 
+  h1.landing {
+    font-size: 1.65em;
+    line-height: 150%;
+  }
+
   a.cache {
     background-image: url("../images/cache_rectangle.png");
   }
@@ -293,15 +300,15 @@ h6.footer {
     display: inline;
 }
 
-h6.footer {
-  font-family: 'Poppins', sans-serif;
-  font-size: .75em;
-  font-weight: regular;
-  grid-column: 7 / -1;
-  grid-row:auto;
-  padding-right: 16px;
-  padding-top: 1.25em;
-  text-align: right;
+  h6.footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: .75em;
+    font-weight: regular;
+    grid-column: 6 / -1;
+    grid-row:auto;
+    padding-right: 16px;
+    padding-top: 1.25em;
+    text-align: right;
   }
 }
 
