@@ -127,8 +127,20 @@ ul.process {
    width: 100%;
  }
 
- a.heading {
-   padding-top: 6em;
+ .offset {
+   content: " ";
+   display: block;
+   height: 120px;
+   margin-top: -120px;
+   visibility: hidden;
+ }
+
+ :target::before {
+   content: " ";
+   display: block;
+   height: 120px;
+   margin-top: -120px;
+   visibility: hidden;
  }
 
 h2 {
@@ -290,8 +302,20 @@ h2.conclusion {
       margin-top: .5em;
     }
 
-    a.heading {
-      padding-top: 10em;
+    .offset {
+      content: " ";
+      display: block;
+      height: 180px;
+      margin-top: -180px;
+      visibility: hidden;
+    }
+
+    :target::before {
+      content: " ";
+      display: block;
+      height: 180px;
+      margin-top: -180px;
+      visibility: hidden;
     }
 
     .modal-content {
@@ -370,7 +394,6 @@ h2.conclusion {
     grid-row-start: 7;
   }
 
-
   img.hero {
     grid-column: 10 / 12;
     grid-row: 1 / span 6;
@@ -439,10 +462,6 @@ h2.conclusion {
     background-color: hsla(174, 31%, 73%, 1.0);
     grid-column: 1 / -1;
     grid-row: 2 / span 4;
-  }
-
-  a.heading {
-    padding-top: 10em;
   }
 
   .sticky {
@@ -780,7 +799,6 @@ h2.conclusion {
   }
 
   .prev, .next {
-    border-radius: 0 3px 3px 0;
     color: white;
     cursor: pointer;
     font-size: 1.5em;
