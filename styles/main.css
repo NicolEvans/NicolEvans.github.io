@@ -13,7 +13,12 @@ a {
   text-decoration: none;
 }
 
-nav {
+#topBar {
+  position: fixed;
+  width: 100%;
+}
+
+.scrolled {
   background-color: hsla(21, 100%, 82%, 0.9);
   position: fixed;
   width: 100%;
@@ -398,6 +403,7 @@ h6.footer {
     grid-row-start: 3;
     letter-spacing: .15em;
     opacity: 0;
+    padding-top: 40px;
     text-align: center;
   }
 

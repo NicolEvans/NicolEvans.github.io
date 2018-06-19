@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Nicole Evans Portfolio | Cache Case Study</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
@@ -70,18 +70,19 @@
 
 <!-- The Process -->
       <section class="process">
-        <article class="process">
-        </article>
-        <div class="p-banner"></div>
-        <h2 class="process">The Process</h2>
-        <ul class="process">
-          <li class="process">Research</li>
-          <li class="process">Information Architecture</li>
-          <li class="process">Branding</li>
-          <li class="process">High Fidelity Prototype</li>
+        <article class="process"></article>
+          <div class="p-banner"></div>
+          <h2 class="process">The Process</h2>
+          <ul id="p-menu" class="process">
+            <li class="process"><a href="#research">Research</a></li>
+            <li class="process"><a href="#information-architecture">Information Architecture</a></li>
+            <li class="process"><a href="#branding">Branding</a></li>
+            <li class="process"><a href="#high-fidelity">High Fidelity Prototype</a></li>
+          </ul>
       </section>
 
 <!-- Research -->
+      <a name="research" class="heading"></a>
       <section class="research">
         <h3 class="three-fifteen">Research</h3>
           <h4 class="c-a">Competitive Analysis</h4>
@@ -128,11 +129,28 @@
                 <p>"Sending photos is how my family and I share our life experiences with each other since we don't live near one another."</p>
               </div>
             </div>
+            <div class="button personas" onclick="openModal('personaModal', 'personaSlides');currentSlide(1)">view user personas</div>
+            <div id="personaModal" class="modal">
+              <span class="close cursor" onclick="closeModal('personaModal')">&times;</span>
+              <div class="modal-content">
 
-            <a class="button personas" target="_blank" href="https://drive.google.com/open?id=16_QOa0z4h8mUVbqzSMoqdGbv6bSIMD_H">view user personas</a>
+                <div class="personaSlides">
+                  <div class="numberText">1 / 2</div>
+                  <img class="demo" src="images/cache/Persona_Bill.png" alt="User Persona Bill">
+                </div>
+
+                <div class="personaSlides">
+                  <div class="numberText">2 / 2</div>
+                  <img class="demo" src="images/cache/Persona_Mary.png" alt="User Persona Mary">
+                </div>
+              </div>
+              <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+              <div class="next" onclick="plusSlides(1)">&#10095;</div>
+            </div>
       </section>
 
 <!-- Information Architecture -->
+      <a name="information-architecture" class="heading"></a>
       <section class="ia">
         <h3 class="three-fifteen">Information Architecture</h3>
 
@@ -143,7 +161,18 @@
           <img class="spacing userstory-one" src="images/cache/user-stories-new.png" alt="Minimum Viable Product Stories for new users">
           <img class="userstory-two" src="images/cache/user-stories-all.png" alt="Minimum Viable Product Stories for all users">
           <img class="spacing userstory-three" src="images/cache/user-stories-returning.png" alt="Minimum Viable Product for returning users">
-          <a class="button userstories" target="_blank" href="https://drive.google.com/open?id=153EAu8Y2eREwnXTzVT1TSqvlmD1AfBCB">view user stories</a>
+          <div class="button userstories" onclick="openModal('storyModal', 'storySlides');currentSlide(1)">view user stories</div>
+          <div id="storyModal" class="modal">
+            <span class="close cursor" onclick="closeModal('storyModal')">&times;</span>
+            <div class="modal-content">
+              <div class="storySlides">
+                <div class="numberText">1 / 1</div>
+                <img class="demo" src="images/cache/user-stories.png" alt="Cache User Stories">
+              </div>
+            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onclick="plusSlides(1)">&#10095;</div>
+          </div>
+        </div>
 
           <h4 class="userflow">User Flows</h4>
           <p class="userflow-p">
@@ -152,7 +181,65 @@
           <img class="spacing sitemap" src="images/cache/site-map.png" alt="Site map for the mobile application">
           <img class="userflow-one"src="images/cache/user-flow-find-item.png" alt="User flow to find an item">
           <img class="spacing userflow-two" src="images/cache/user-flow-share.png" alt="User flow to share an item discovered online">
-          <a class="button userflows" target="_blank" href="https://drive.google.com/open?id=1QPuw4JNYDLcetetIQef6XWtg60iBuA7h">view user flows</a>
+          <div class="button userflows" onclick="openModal('flowsModal', 'flowsSlides');currentSlide(1)">view user flows</div>
+          <div id="flowsModal" class="modal">
+            <span class="close cursor" onclick="closeModal('flowsModal')">&times;</span>
+            <div class="modal-content">
+
+              <div class="flowsSlides">
+                <div class="numberText">1 / 10</div>
+                <img class="demo" src="images/cache/user-flows-1.jpeg" alt="New User Sign Up Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">2 / 10</div>
+                <img class="demo" src="images/cache/user-flows-2.jpeg" alt="Returning User Sign In Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">3 / 10</div>
+                <img class="demo" src="images/cache/user-flows-3.jpeg" alt="Share a Photo Taken with my Phone Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">4 / 10</div>
+                <img class="demo" src="images/cache/user-flows-4.jpeg" alt="Share an Article Found Online Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">5 / 10</div>
+                <img class="demo" src="images/cache/user-flows-5.jpeg" alt="Retrieve a Shared Item Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">6 / 10</div>
+                <img class="demo" src="images/cache/user-flows-6.jpeg" alt="Find an Item and Re-Share It Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">7 / 10</div>
+                <img class="demo" src="images/cache/user-flows-7.jpeg" alt="Edit Tags Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">8 / 10</div>
+                <img class="demo" src="images/cache/user-flows-8.jpeg" alt="Change Password Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">9 / 10</div>
+                <img class="demo" src="images/cache/user-flows-9.jpeg" alt="Log Out Flow">
+              </div>
+
+              <div class="flowsSlides">
+                <div class="numberText">10 / 10</div>
+                <img class="demo" src="images/cache/user-flows-10.jpeg" alt="Upgrade Plan Flow">
+              </div>
+
+            </div>
+            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onclick="plusSlides(1)">&#10095;</div>
+          </div>
 
 
           <h4 class="wireframes">Wireframes</h4>
@@ -170,6 +257,7 @@
       </section>
 
 <!-- Branding -->
+      <a name="branding" class="heading"></a>
       <section class="branding">
         <h3 class="three-fifteen">Branding</h3>
           <p class="branding-p">
@@ -178,10 +266,54 @@
           </p>
           <img class="branding-one" alt=""src="images/cache/branding-logos.png" alt="Cache logos">
           <img class="spacing branding-two" src="images/cache/branding-icons.png" alt="Cache color palette, application icons and buttons">
-          <a class="button branding" target="_blank" href="https://drive.google.com/open?id=1PB1q4JQ1DQM7Wu8qXMBLhj6ZdRkSlpYh">view style guide</a>
+          <div class="button branding" onclick="openModal('brandModal', 'brandSlides');currentSlide(1)">view style guide</div>
+          <div id="brandModal" class="modal">
+            <span class="close cursor" onclick="closeModal('brandModal')">&times;</span>
+            <div class="modal-content">
+
+              <div class="brandSlides">
+                <div class="numberText">1 / 10</div>
+                <img class="demo" src="images/cache/style-guide-1.jpeg" alt="Style Guide Cover">
+              </div>
+
+              <div class="brandSlides">
+                <div class="numberText">2 / 10</div>
+                <img class="demo" src="images/cache/style-guide-2.jpeg" alt="Style Guide: Identity">
+              </div>
+
+              <div class="brandSlides">
+                <div class="numberText">3 / 10</div>
+                <img class="demo" src="images/cache/style-guide-3.jpeg" alt="Visual Brand Style: Logo">
+              </div>
+
+              <div class="brandSlides">
+                <div class="numberText">4 / 10</div>
+                <img class="demo" src="images/cache/style-guide-4.jpeg" alt="Visual Brand Style: Logo Mark and Logo Clear Space">
+              </div>
+
+              <div class="brandSlides">
+                <div class="numberText">5 / 10</div>
+                <img class="demo" src="images/cache/style-guide-5.jpeg" alt="Visual Brand Style: Improper Logo Usage">
+              </div>
+
+              <div class="brandSlides">
+                <div class="numberText">6 / 10</div>
+                <img class="demo" src="images/cache/style-guide-6.jpeg" alt="Visual Brand Style: Brand Colors">
+              </div>
+
+              <div class="brandSlides">
+                <div class="numberText">7 / 10</div>
+                <img class="demo" src="images/cache/style-guide-7.jpeg" alt="Visual Brand Style: Typography">
+              </div>
+
+            </div>
+            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onclick="plusSlides(1)">&#10095;</div>
+          </div>
       </section>
 
 <!-- High Fidelity Prototype -->
+      <a name="high-fidelity" class="heading"></a>
       <section class="hifi">
         <h3 class="three-fifteen">High Fidelity Prototype</h3>
           <p class="hifi-p">
@@ -213,6 +345,7 @@
             <img src="images/cache/iterations-account.png" alt="First and last iterations of the high fidelity my account mockup screen">
             <figcaption>first and last iteration of the my account screen</figcaption>
           </figure>
+          <a class="button prototype-bottom" target="_blank" href="https://invis.io/2EGN5NCVF3H">view app prototype</a>
         </article>
 
 <!--Introdcution screen interations
@@ -271,12 +404,12 @@
     <footer class="container">
       <ul class="footer">
         <li class="footer">
-          <a class="footer" href="https://www.linkedin.com/in/nicole-evans-388243ba/">
+          <a class="footer" target="_blank" href="https://www.linkedin.com/in/nicole-evans-388243ba/">
             <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
         <li class="footer">
-          <a class="footer "href="https://github.com/NicolEvans">
+          <a class="footer" target="_blank" href="https://github.com/NicolEvans">
             <i class="fab fa-github" aria-hidden="true"></i>
           </a>
         </li>
@@ -289,6 +422,30 @@
       </ul>
       <h6 class="footer">Designed & Developed by Nicole Evans</h6>
     </footer>
+
+    <!-- sticky nav -->
+    <script>
+      var pMenu = document.getElementById('p-menu');
+      var didScroll = false;
+      window.onscroll = function() {pNav()};
+      var sticky = pMenu.offsetTop;
+      function pNav() {
+        didScroll = true;
+        if (window.pageYOffset >= sticky) {
+          pMenu.className = 'sticky'
+        } else {
+          pMenu.classList = ('process');
+        }
+      }
+      setInterval(function () {
+        if(didScroll) {
+          didScroll = false;
+        }
+      }, 100);
+    </script>
+
+    <!-- lightbox -->
+    <script src="scripts/lightbox.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120623551-1"></script>
