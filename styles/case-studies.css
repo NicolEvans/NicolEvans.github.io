@@ -9,8 +9,8 @@ main {
 }
 
 img.caselogo {
-  margin: 0em;
-  height: 65px;
+  height: auto;
+  margin: 0;
   padding: 4em 0 0 16px;
   width: 218px;
 }
@@ -41,9 +41,15 @@ p.hero {
 }
 
 img {
+  box-sizing: border-box;
   display: block;
+  padding: 16px;
   margin: 0em auto;
   max-width: 100%;
+}
+
+img.ne {
+  padding: 0;
 }
 
 p {
@@ -139,16 +145,16 @@ ul.process {
  .offset {
    content: " ";
    display: block;
-   height: 180px;
-   margin-top: -180px;
+   height: 110px;
+   margin-top: -110px;
    visibility: hidden;
  }
 
  :target::before {
    content: " ";
    display: block;
-   height: 180px;
-   margin-top: -180px;
+   height: 110px;
+   margin-top: -110px;
    visibility: hidden;
  }
 
@@ -181,33 +187,53 @@ div.twocolumn {
 
 img.twocolumn {
   height: 80px;
+  padding: 0;
   width: 80px;
+}
+
+h6.persona {
+  padding-bottom: .75em;
 }
 
 p.nospace {
   margin-bottom: 0em;
 }
 
-
 .spacing {
   margin: 2em auto 2em auto;
 }
 
-
-.thin {
-  display: inline-block;
-  max-width: 48%;
+div.userstories, div.userflows {
+  margin-bottom: 2em;
 }
 
-figure {
-  margin: 0 16px 3em 16px;
+.sitemap, .userflow-sketch {
+  display: none;
 }
 
-figcaption {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  margin: .5em auto .75em auto;
-  text-align: center;
+a.wireframes {
+  margin-top: 2em;
+}
+
+.prototype-bottom, div.intros {
+  margin-bottom: 4em;
+}
+
+p.results-one, p.results-two, p.results-three {
+  margin-bottom: .25em;
+}
+
+img.results-one, img.results-two, img.results-three {
+  margin-bottom: 3em;
+}
+
+.branding-one, .branding-four {
+  max-width: 75%;
+}
+
+div.branding {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 section.conclusion {
@@ -245,7 +271,7 @@ h2.conclusion {
     height: 100%;
     left: 0;
     overflow: auto;
-    padding-top: 50px;
+    padding-top: 25px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -280,7 +306,7 @@ h2.conclusion {
     color: white;
     cursor: pointer;
     font-size: 1.25em;
-    padding: 50px;
+    padding: 25px;
     position: absolute;
     transition: 0.6s ease;
     user-select: none;
@@ -300,6 +326,13 @@ h2.conclusion {
     position: absolute ;
   }
 
+  .caption-container {
+    background-color: black;
+    color: white;
+    padding-top: 3em;
+    text-align: center;
+  }
+
 @media screen and (min-width: 475px) {
     li.process {
       display: block;
@@ -314,17 +347,25 @@ h2.conclusion {
     .offset {
       content: " ";
       display: block;
-      height: 180px;
-      margin-top: -180px;
+      height: 160px;
+      margin-top: -160px;
       visibility: hidden;
     }
 
     :target::before {
       content: " ";
       display: block;
-      height: 180px;
-      margin-top: -180px;
+      height: 160px;
+      margin-top: -160px;
       visibility: hidden;
+    }
+
+    .site-hero, .how-works {
+      max-width: 75%;
+    }
+
+    p.results-one, p.results-two, p.results-three {
+      text-align: center;
     }
 
     .modal-content {
@@ -349,6 +390,10 @@ h2.conclusion {
 
   h4 {
     margin-top: 0;
+  }
+
+  img {
+    padding: 0;
   }
 
   article.hero {
@@ -614,12 +659,14 @@ h2.conclusion {
    }
 
    .sitemap {
+     display: inline;
      grid-column: 3 / 15;
      grid-row: 11 / span 4;
      margin: 0;
    }
 
    .userflow-sketch {
+     display: inline;
      grid-column: 8 / 15;
      grid-row: 7 / span 3;
    }
@@ -671,7 +718,10 @@ h2.conclusion {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 20px;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto 2em auto 4em;
+    grid-template-rows:
+      auto auto auto auto auto
+      auto auto auto auto 2em
+      auto auto auto 4em;
   }
 
   .branding-p {
@@ -688,6 +738,16 @@ h2.conclusion {
     grid-column: 3 / 15;
     grid-row-start: 11;
     margin: 0;
+  }
+
+  .branding-three {
+    grid-column: 3 / 10;
+    grid-row-start: 12;
+  }
+
+  .branding-four {
+    grid-column: 11 / 15;
+    grid-row-start: 12;
   }
 
   div.branding {
