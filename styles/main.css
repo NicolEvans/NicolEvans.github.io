@@ -19,7 +19,7 @@ a {
 }
 
 .scrolled {
-  background-color: hsla(21, 100%, 82%, 0.9);
+  background-color: hsla(21, 100%, 82%, 0.95);
   position: fixed;
   width: 100%;
 }
@@ -29,6 +29,10 @@ a {
   grid-template-columns: repeat(10, 1fr);
   grid-column-gap: 16px;
   grid-template-rows: auto auto auto;
+}
+
+nav {
+  z-index: 100;
 }
 
 ul.topnav {
@@ -43,17 +47,19 @@ a.topnav {
 }
 
 li.logo {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
   margin: 8px auto auto 16px;
 }
 
 img.ne {
-  height: 22px;
-  width: 35px;
+  height: 35px;
+  width: 55px;
 }
 
 .about {
   grid-column-start: 5;
+  grid-row-start: 2;
   margin-top: 12px;
 }
 
@@ -61,6 +67,7 @@ li.contact {
   border: 0.09em solid hsla(189, 97%, 14%, 1.0);
   box-sizing: border-box;
   grid-column: 6 / -1;
+  grid-row-start: 2;
   height: auto;
   margin: 2px 8px 0px 2px;
   padding: .75em .5em .5em .5em;
@@ -77,14 +84,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.landing {
   color: hsla(189, 97%, 14%, 1.0);
-  font-size: 1.35em;
+  font-size: 1.65em;
   font-weight: bold;
   grid-column: 1 / 9;
   grid-row-start: 2;
   line-height: 140%;
-  padding-top: 30%;
+  padding-top: 6em;
   padding-left: 16px;
-  padding-bottom: 20%;
+  padding-bottom: 5.5em;
 }
 
 
@@ -141,7 +148,7 @@ h3 {
 }
 
 h3.featured {
-  font-weight: bold;
+  font-weight: 600;
   grid-column: 1 / -1;
   color: hsla(189, 97%, 14%, 1.0);
 }
@@ -169,21 +176,24 @@ a.cache {
 }
 
 .project {
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 1.25px;
   line-height: 150%;
 }
 
 .description {
   font-size: 0.75em;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 1.25px;
   line-height: 115%;
 }
 
 .view {
   color: hsla(0, 100%, 100%, 1.0);
+  font-weight: 400;
   grid-column: 5 / 8;
   grid-row-start: 2;
+  letter-spacing: 1.25px;
   padding-top: 35%;
 }
 
@@ -291,6 +301,7 @@ h6.footer {
 
   footer {
     position: fixed;
+    z-index: 100;
   }
 
   ul.footer {
@@ -336,12 +347,12 @@ h6.footer {
   }
 
   .about {
-    grid-column-start: 12;
+    grid-column-start: 11;
     padding-top: 0.5em;
   }
 
   li.contact {
-    grid-column: 13 / 15;
+    grid-column: 12 / 15;
     height: auto;
     margin: 0.5em;
     padding: 0.75em .5em .5em .5em;
@@ -407,7 +418,7 @@ h6.footer {
     text-align: center;
   }
 
-  a.cache {
+  a.cache  {
     background-image: url("../images/Cache_rectangle.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -415,12 +426,15 @@ h6.footer {
     grid-row-start: 2 / auto;
   }
 
+
   a:hover.layover .view {
-    opacity: 1.0
+    opacity: 1.0;
+    transition: all .4s ease-in-out;
   }
 
   a:hover.layover {
     background-image: url("../images/rectangle-hover.png");
+    transition: all .15s ease-in-out;
   }
 
   ul.footer {

@@ -22,6 +22,8 @@
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName(currentSlideClass);
+    var demo = document.getElementsByClassName('intro-demo');
+    var captionText = document.getElementById('caption');
     if (slides.length === 0) {
       return;
     }
@@ -31,4 +33,5 @@
       slides[i].style.display = 'none';
     }
     slides[slideIndex-1].style.display = 'block';
+    captionText.innerHTML = demo[slideIndex-1].alt;
   }

@@ -10,15 +10,15 @@
     <!-- Reset -->
     <link rel="stylesheet" href="styles/reset.css">
 
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/case-studies.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,medium,semibold,bold|Martel">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/case-studies.css">
 
   </head>
 
@@ -38,12 +38,12 @@
       <section>
         <article class="hero">
           <img class="caselogo" src="images/cache/logo.png" alt="Cache Logo">
-          <h4 class="hero">A new way to store and organize the digital items you share.</h4>
+          <h4 class="hero">A new way to store and organize the digital items you share</h4>
           <h3 class="hero role">Role</h3>
           <p class="hero role">UX Design, Branding</p>
           <h3 class="hero tools">Tools</h3>
           <p class="hero tools">Figma, inVision, Draw.io</p>
-          <img class="hero" src="images/cache/hero-mockup.png" alt="Mockup of the Cache application dashboard">
+          <img class="hero" src="images/cache/cache-hero.png" alt="Mockup screens of the Cache application">
         </article>
       </section>
 
@@ -119,14 +119,14 @@
               <img class="twocolumn" src="images/cache/bill.png" alt="User Persona Bill">
               <div>
                 <h6>Bill: Article Reader and Sharer</h6>
-                <p>"Reading and learning is part of my everyday life. I'm looking for a quick and easy way to save and share what I find."</p>
+                <p>&ldquo;Reading and learning is part of my everyday life. I'm looking for a quick and easy way to save and share what I find.&rdquo;</p>
               </div>
             </div>
             <div class="twocolumn persona-two">
               <img class="twocolumn" src="images/cache/mary.png" alt="User Persona Mary">
               <div>
                 <h6>Mary: Photo Sharer and Saver</h6>
-                <p>"Sending photos is how my family and I share our life experiences with each other since we don't live near one another."</p>
+                <p>&ldquo;Sending photos is how my family and I share our life experiences with each other since we don't live near one another.&rdquo;</p>
               </div>
             </div>
             <div class="button personas" onclick="openModal('personaModal', 'personaSlides');currentSlide(1)">view user personas</div>
@@ -158,9 +158,6 @@
           <p class="userstory-p">
             I developed user stories for new, returning, and all users. I took all of the high level stories and a few medium levels to round out a Minimum Viable Product.
           </p>
-          <img class="spacing userstory-one" src="images/cache/user-stories-new.png" alt="Minimum Viable Product Stories for new users">
-          <img class="userstory-two" src="images/cache/user-stories-all.png" alt="Minimum Viable Product Stories for all users">
-          <img class="spacing userstory-three" src="images/cache/user-stories-returning.png" alt="Minimum Viable Product for returning users">
           <div class="button userstories" onclick="openModal('storyModal', 'storySlides');currentSlide(1)">view user stories</div>
           <div id="storyModal" class="modal">
             <span class="close cursor" onclick="closeModal('storyModal')">&times;</span>
@@ -169,8 +166,6 @@
                 <div class="numberText">1 / 1</div>
                 <img class="demo" src="images/cache/user-stories.png" alt="Cache User Stories">
               </div>
-            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-            <div class="next" onclick="plusSlides(1)">&#10095;</div>
           </div>
         </div>
 
@@ -178,9 +173,8 @@
           <p class="userflow-p">
             I created user flows in Draw.io  based on those MVP user stories to figure out how users will interact with the application and ensure tasks were not getting overly complicated.
           </p>
+          <img class="userflow-sketch"src="images/cache/flow-sketch.png" alt="Sketch of user flow share a photo">
           <img class="spacing sitemap" src="images/cache/site-map.png" alt="Site map for the mobile application">
-          <img class="userflow-one"src="images/cache/user-flow-find-item.png" alt="User flow to find an item">
-          <img class="spacing userflow-two" src="images/cache/user-flow-share.png" alt="User flow to share an item discovered online">
           <div class="button userflows" onclick="openModal('flowsModal', 'flowsSlides');currentSlide(1)">view user flows</div>
           <div id="flowsModal" class="modal">
             <span class="close cursor" onclick="closeModal('flowsModal')">&times;</span>
@@ -245,14 +239,13 @@
           <h4 class="wireframes">Wireframes</h4>
           <p class="wireframes-p">
             I sketched out basic screen layouts, then cleaned them up in Figma, and created a low fidelity clickable prototype in InVision for testing.
-            There were a few things to learn from this first round of testing such as the lack of a navigation bar and that the words "tag" and "share" made users think of social media, which meant the concept was not clear.
+            There were a few things to learn from this first round of testing such as the lack of a navigation bar and that the words &ldquo;tag&rdquo; and &ldquo;share&rdquo; made users think of social media, which meant the concept was not clear.
             I also learned to use Apple's Human Interface Guidelines more, not just in the visual design but the function as well.
             It also showed me that I needed to offer an opportunity for users to experience the application before signing up, so I created an introduction that used screen grabs of the mockups to show users what to expect.
           </p>
-          <img class="sketch" src="images/cache/wireframes-sketch.png" alt="Example of hand drawn sketches of screen wireframes">
-          <img class="spacing wireframe-one" src="images/cache/wireframe-item-view.png" alt="Wireframe of item view screen">
-          <img class="wireframe-two" src="images/cache/wireframe-add-tag.png" alt="Wireframe of add label popover screen">
-          <img class="spacing wireframe-three" src="images/cache/wireframe-two-tags.png" alt="Wireframe of the screen displaying search results for two labels">
+          <img class="wireframe-one" src="images/cache/item-view.png" alt="Sketch and wireframe of item view screen">
+          <img class="wireframe-two" src="images/cache/edit-tags.png" alt="Sketch and wireframe of edit tag popover screen">
+          <img class="wireframe-three" src="images/cache/tag-view.png" alt="Sketch and wireframe of the tag view screen">
           <a class="button wireframes" target="_blank" href="https://invis.io/XWG0MBJASQR">view lo fi prototype</a>
       </section>
 
@@ -321,31 +314,51 @@
             I also took the feedback from testing the low fidelity prototype to update the screens and added visual design elements.
             I then created a clickable prototype with these high fidelity mockups to test again, which led to additional updates.
           </p>
-          <figure class="site">
-            <img src="images/cache/marketing-site-mockup.png" alt="High fidelity mockup of the marketing site">
-            <figcaption class="spacing">marketing site</figcaption>
-          </figure>
-          <a class="button site" target="_blank" href="https://invis.io/YPK1US178MR">view site prototype</a>
+          <img class="site-hero" src="images/cache/marketing-hero.gif" alt="Marketing site hero carousel">
+          <img class="how-works" src="images/cache/how-it-works.png" alt="How it works section of the marketing site">
+          <img class="features" src="images/cache/features.png" alt="Features section of the marketing site">
+          <img class="plans" src="images/cache/plans.png" alt="Plans sections of the marketing site">
 
           <h4 class="results">Testing Results</h4>
           <p class="results-p">
-            When testing the high fidelity mockups, testers only quickly glanced at the introduction and still didn't fully understand the concept of the application.
-            I updated the "email" references to remove existing associations in an attempt to clarify the concept.
-            I also didn't have an empty state for the application and testers were confused when they signed up for an account then entered into a returning user's experience.
+            When testing the high fidelity mockups, testers only quickly glanced at the introduction screens and still didn't fully understand the concept of the application.
+            I added more visuals and one more screen to the introduction in order to catch the user's attention.
+            I also updated the &ldquo;email&rdquo; references to remove existing associations in an attempt to clarify the concept.
+            Lastly, an empty state did not exist for the application and testers were confused when they signed up for an account then entered into a returning user's experience.
           </p>
-          <figure class="results-one">
-            <img src="images/cache/iterations-dashboard.png" alt="First and last iterations of the high fidelity dashboard mockup">
-            <figcaption>first and last iteration of the dashboard</figcaption>
-          </figure>
-          <figure class="results-two">
-            <img src="images/cache/iterations-share.png" alt="First and last iterations of the high fidelity share screen mockup">
-            <figcaption>first and last iteration of the share screen</figcaption>
-          </figure>
-          <figure class="results-three">
-            <img src="images/cache/iterations-account.png" alt="First and last iterations of the high fidelity my account mockup screen">
-            <figcaption>first and last iteration of the my account screen</figcaption>
-          </figure>
-          <a class="button prototype-bottom" target="_blank" href="https://invis.io/2EGN5NCVF3H">view app prototype</a>
+          <div class="button intros" onclick="openModal('introModal', 'introSlides');currentSlide(1)">view introduction iterations</div>
+          <div id="introModal" class="modal">
+            <span class="close cursor" onclick="closeModal('introModal')">&times;</span>
+            <div class="modal-content">
+
+              <div class="introSlides">
+                <div class="numberText">1 / 2</div>
+                <img class="intro-demo" src="images/cache/first-introduction.gif" alt="First iteration of the application's introduction screens">
+              </div>
+
+              <div class="introSlides">
+                <div class="numberText">2 / 2</div>
+                <img class="intro-demo" src="images/cache/last-introduction.gif" alt="Last iteration of the application's introduction screens">
+              </div>
+            </div>
+            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onclick="plusSlides(1)">&#10095;</div>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+
+          <a class="button prototype-bottom" target="_blank" href="https://invis.io/2EGN5NCVF3H">view prototype</a>
+
+          <p class="results-one">first and last iteration of the dashboard</p>
+          <img class="results-one" src="images/cache/dashboards.png" alt="First and last iterations of the high fidelity dashboard mockup">
+
+         <p class="results-two">first and last iteration of the share screen</p>
+          <img class="results-two" src="images/cache/share-files.png" alt="First and last iterations of the high fidelity share screen mockup">
+
+          <p class="results-three">first and last iteration of the my account screen</p>
+          <img class="results-three" src="images/cache/my-accounts.png" alt="First and last iterations of the high fidelity my account mockup screen">
         </article>
 
 <!--Introdcution screen interations
@@ -383,11 +396,11 @@
             Give the users something to connect with, otherwise you can't expect them to give you their time and personal information.
             <br>
             The second was the value in testing user stories.
-            I was overly concerned that users could complete a task that I didn;t test if the feature was necessary at all.
+            I was overly concerned that users could complete a task that I didn't test if the feature was necessary at all.
             In the last iteration, I ended up removing two features.
             <br>
             The third was how to be mindful of using familiar terms and screens.
-            My use of "tags," "email," and "share" confused testers because they were not being used in the same exact way in this application as in others.
+            My use of &ldquo;tags,&rdquo; &ldquo;email,&rdquo; and &ldquo;share&rdquo; confused testers because they were not being used in the same exact way in this application as in others.
           </p>
         </article>
 
@@ -431,15 +444,15 @@
       var sticky = pMenu.offsetTop;
       function pNav() {
         didScroll = true;
-        if (window.pageYOffset >= sticky) {
-          pMenu.className = 'sticky'
-        } else {
-          pMenu.classList = ('process');
-        }
       }
       setInterval(function () {
         if(didScroll) {
           didScroll = false;
+          if (window.pageYOffset >= sticky) {
+            pMenu.className = 'sticky'
+          } else {
+            pMenu.classList = ('process');
+          }
         }
       }, 100);
     </script>
