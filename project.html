@@ -442,23 +442,28 @@
 
     <!-- sticky nav -->
     <script>
-      var pMenu = document.getElementById('p-menu');
-      var didScroll = false;
-      window.onscroll = function() {pNav()};
-      var sticky = pMenu.offsetTop;
-      function pNav() {
-        didScroll = true;
-      }
-      setInterval(function () {
-        if(didScroll) {
-          didScroll = false;
-          if (window.pageYOffset >= sticky) {
-            pMenu.className = 'sticky'
-          } else {
-            pMenu.classList = ('process');
-          }
+      function onReady() {
+        var pMenu = document.getElementById('p-menu');
+        var didScroll = false;
+        window.onscroll = function() {pNav()};
+        var sticky = pMenu.offsetTop;
+        function pNav() {
+          didScroll = true;
         }
-      }, 100);
+        setInterval(function () {
+          if(didScroll) {
+            didScroll = false;
+            if (window.pageYOffset >= sticky) {
+              pMenu.className = 'sticky'
+            } else {
+              pMenu.classList = ('process');
+            }
+          }
+        }, 250);
+      }
+      window.onload = function() {
+        onReady();
+      }
     </script>
 
     <!-- lightbox -->
