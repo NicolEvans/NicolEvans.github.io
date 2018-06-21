@@ -10,15 +10,17 @@
   var slideIndex = 1;
   var currentModalId = '';
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+  function plusSlides(s) {
+    slideIndex = slideIndex + s;
+    showSlides(slideIndex);
   }
 
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
+  function currentSlide(s) {
+    slideIndex = s;
+    showSlides(slideIndex);
   }
 
-  function showSlides(n) {
+  function showSlides(slideNumber) {
     var i;
     var modal = document.getElementById(currentModalId);
     var slides = modal.getElementsByClassName('slides');
@@ -27,11 +29,11 @@
     if (slides.length === 0) {
       return;
     }
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (slideNumber > slides.length) {slideIndex = 1}
+    if (slideNumber < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     }
     slides[slideIndex-1].style.display = 'block';
-    captionText[slideIndex-1].innerHTML = demo[slideIndex-1].alt;
+    captionText[0].innerHTML = demo[slideIndex-1].alt;
   }

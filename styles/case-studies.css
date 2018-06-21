@@ -417,7 +417,7 @@ h2.conclusion {
     grid-column-gap: 20px;
     grid-template-rows: 2em 5em 5em 2em 5em auto;
     margin-bottom: 2em;
-    padding-top: 10%;
+    padding-top: 5em;
   }
 
   h2, h3, h4, h5 {
