@@ -1,6 +1,6 @@
   function openModal(modalId) {
     document.getElementById(modalId).style.display ='block';
-    var currentModalId = modalId;
+    currentModalId = modalId;
   }
 
   function closeModal(modalId) {
@@ -9,7 +9,6 @@
 
   var slideIndex = 1;
   var currentModalId = '';
-  showSlides(slideIndex);
 
   function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -34,5 +33,5 @@
       slides[i].style.display = 'none';
     }
     slides[slideIndex-1].style.display = 'block';
-    captionText.innerHTML = demo[slideIndex-1].alt;
+    captionText[slideIndex-1].innerHTML = demo[slideIndex-1].alt;
   }
