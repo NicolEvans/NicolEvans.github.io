@@ -1,6 +1,6 @@
-  function openModal(modalId, slideClass) {
+  function openModal(modalId) {
     document.getElementById(modalId).style.display ='block';
-    currentSlideClass = slideClass;
+    var currentModalId = modalId;
   }
 
   function closeModal(modalId) {
@@ -8,7 +8,7 @@
   }
 
   var slideIndex = 1;
-  var currentSlideClass = '';
+  var currentModalId = '';
   showSlides(slideIndex);
 
   function plusSlides(n) {
@@ -21,9 +21,10 @@
 
   function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName(currentSlideClass);
-    var demo = document.getElementsByClassName('intro-demo');
-    var captionText = document.getElementById('caption');
+    var modal = document.getElementById(currentModalId);
+    var slides = modal.getElementsByClassName('slides');
+    var demo = modal.getElementsByClassName('demo');
+    var captionText = modal.getElementsByClassName('caption');
     if (slides.length === 0) {
       return;
     }
