@@ -212,7 +212,12 @@ div.userstories, div.userflows {
 }
 
 a.wireframes {
-  margin-top: 2em;
+  margin-bottom: 2em;
+  max-height: 5em;
+}
+
+.wireframe-one, .wireframe-two, .wireframe-three {
+  padding-bottom: 5em;
 }
 
 .prototype-bottom, div.intros {
@@ -227,13 +232,13 @@ img.results-one, img.results-two, img.results-three {
   margin-bottom: 3em;
 }
 
-.branding-one, .branding-four {
-  max-width: 75%;
-}
-
 div.branding {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+.branding-one, .branding-four {
+  max-width: 75%;
 }
 
 section.conclusion {
@@ -360,8 +365,16 @@ h2.conclusion {
       visibility: hidden;
     }
 
+    div.charts {
+      grid-template-rows: auto 1.5em auto;
+    }
+
+    .chart-two {
+      grid-row-start: 3;
+    }
+
     .site-hero, .how-works {
-      max-width: 75%;
+      max-width: 100%;
     }
 
     p.results-one, p.results-two, p.results-three {
@@ -393,7 +406,9 @@ h2.conclusion {
   }
 
   img {
+    display: block;
     padding: 0;
+    margin: auto;
   }
 
   article.hero {
@@ -559,7 +574,10 @@ h2.conclusion {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 20px;
-    grid-template-rows: auto auto auto 3em auto auto 3em auto auto auto auto;
+    grid-template-rows:
+      auto auto auto 3em auto
+      auto 3em auto auto auto
+      auto;
   }
 
   .three-fifteen {
@@ -596,8 +614,15 @@ h2.conclusion {
     grid-row-start: 6;
   }
 
-  div.twocolumn {
+  div.persona-one, div.persona-two {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 2em;
     padding: 0;
+  }
+
+  img.persona {
+    height: 150px;
+    width: 150px;
   }
 
   .personas {
@@ -630,7 +655,12 @@ h2.conclusion {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 20px;
-    grid-template-rows: auto auto auto auto 3em auto auto auto auto 2em auto auto auto auto 5em auto 5em auto 3em auto 3em auto 3em auto 2em;
+    grid-template-rows:
+      auto auto auto auto 3em
+      auto auto auto auto 2em
+      auto auto auto auto 5em
+      auto 5em auto auto 3em
+      auto auto auto;
   }
 
   .userstory {
@@ -662,7 +692,7 @@ h2.conclusion {
      display: inline;
      grid-column: 3 / 15;
      grid-row: 11 / span 4;
-     margin: 0;
+     margin: auto;
    }
 
    .userflow-sketch {
@@ -695,7 +725,7 @@ h2.conclusion {
 
   .wireframe-one {
     grid-column: 6 / 12;
-    grid-row-start: 20;
+    grid-row-start: 21;
   }
 
   .wireframe-two {
@@ -705,7 +735,7 @@ h2.conclusion {
 
   .wireframe-three {
     grid-column: 6 / 12;
-    grid-row-start: 24;
+    grid-row-start: 23;
   }
 
   a.wireframes {
@@ -732,22 +762,25 @@ h2.conclusion {
   .branding-one {
     grid-column: 8 / 14;
     grid-row: 2 / span 8;
+    max-width: 100%;
   }
 
   .branding-two {
     grid-column: 3 / 15;
     grid-row-start: 11;
-    margin: 0;
+    max-width: 100%;
   }
 
   .branding-three {
     grid-column: 3 / 10;
     grid-row-start: 12;
+    max-width: 100%;
   }
 
   .branding-four {
     grid-column: 11 / 15;
     grid-row-start: 12;
+    max-width: 100%;
   }
 
   div.branding {
@@ -762,7 +795,7 @@ h2.conclusion {
     grid-column-gap: 20px;
     grid-template-rows:
       auto auto auto 2em 2em
-      auto 2em auto auto 4em
+      auto 5em auto auto 4em
       auto auto 3em auto auto
       1em auto auto 4em auto
       auto 4em auto auto 3em;
