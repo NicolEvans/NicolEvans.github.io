@@ -108,7 +108,7 @@
       setInterval(function () {
         if(didScroll) {
           didScroll = false;
-          if (document.documentElement.scrollTop > 50) {
+          if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
             topBar.className = 'scrolled';
           } else {
             topBar.className = '';

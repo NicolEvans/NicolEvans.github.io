@@ -429,12 +429,12 @@ h6.footer {
 
   a:hover.layover .view {
     opacity: 1.0;
-    transition: all .4s ease-in-out;
+    transition: all .25s ease-in-out;
   }
 
   a:hover.layover {
     background-image: url("../images/rectangle-hover.png");
-    transition: all .15s ease-in-out;
+    transition: all .25s ease-in-out;
   }
 
   ul.footer {
