@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background-color: hsla(0, 100%, 100%, 1.0);
   position: fixed;
