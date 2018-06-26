@@ -307,6 +307,7 @@ h2.conclusion {
     padding-top: 25px;
     position: fixed;
     top: 0;
+    touch-action: pan-left;
     width: 100%;
     z-index: 200;
   }
