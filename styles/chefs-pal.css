@@ -429,15 +429,7 @@ h2.conclusion {
       visibility: hidden;
     }
 
-    div.charts {
-      grid-template-rows: auto 1.5em auto;
-    }
-
-    .chart-two {
-      grid-row-start: 3;
-    }
-
-    .site-hero, .how-works {
+    .site-hero, {
       max-width: 100%;
     }
 
@@ -445,7 +437,7 @@ h2.conclusion {
       text-align: center;
     }
 
-    .modal-content {
+    .modal-content, img.branding-three, img.branding-four {
       width: 70%;
     }
 
