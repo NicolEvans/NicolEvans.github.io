@@ -14,8 +14,8 @@ main {
 
 img.caselogo {
   height: auto;
-  margin: 0;
-  padding: 4em 0 0 16px;
+  margin: auto;
+  padding: 4em 0 0 0;
   width: 218px;
 }
 
@@ -32,6 +32,7 @@ h3 {
 
 h4.hero {
   margin-bottom: 2em;
+  text-align: center;
 }
 
 h3.hero {
@@ -189,6 +190,30 @@ a {
   color: hsla(189, 97%, 14%, 1.0);
 }
 
+.c-a-p-two {
+  line-height: 1.75;
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+li.top {
+  content: none;
+}
+
+li.c-a::before {
+  color: hsla(189, 97%, 14%, 1.0);
+  content: "\2022";
+  display: inline-block;
+  padding-top: .75em;
+  width: 1em;
+}
+
+div.swot, div.userstories, div.userflows {
+  margin-bottom: 2em;
+}
+
 div.twocolumn {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -219,11 +244,7 @@ p.nospace {
   margin: 2em auto 2em auto;
 }
 
-div.userstories, div.userflows {
-  margin-bottom: 2em;
-}
-
-.sitemap, .userflow-sketch {
+p.sitemap, img.sitemap {
   display: none;
 }
 
@@ -232,12 +253,8 @@ a.wireframes {
   max-height: 5em;
 }
 
-.wireframe-one, .wireframe-two, .wireframe-three {
+.wireframe-sketch, .wireframe-one, .wireframe-two, .wireframe-three {
   padding-bottom: 5em;
-}
-
-.prototype-bottom, div.intros {
-  margin-bottom: 4em;
 }
 
 p.sitemap,
@@ -254,6 +271,7 @@ p.results-one, p.results-two, p.results-three {
   text-transform: uppercase;
 }
 
+img.landing, img.tags,
 img.results-one, img.results-two, img.results-three {
   margin-bottom: 3em;
 }
@@ -263,12 +281,27 @@ div.branding {
   margin-bottom: 1.5em;
 }
 
-img.branding-one, img.branding-four {
-  max-width: 75%;
-}
-
 img.branding-one, img.branding-two, img.branding-three, img.branding-four {
   margin-bottom: 3em;
+}
+
+a.prototype-1-mobile {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  min-width: 290px;
+  text-align: center;
+}
+
+img.results-three {
+  display: none;
+}
+
+a.prototype-2-desktop, a.prototype-2-mobile, a.prototype-2-mobile-work {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  max-height: 5em;
+  width: 300px;
+  text-align: center;
 }
 
 section.conclusion {
