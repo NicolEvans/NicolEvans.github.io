@@ -1,7 +1,7 @@
   function dropDown() {
     document.getElementById("dropProjects").classList.toggle("show");
   }
-  window.onclick =- function(event) {
+  window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
