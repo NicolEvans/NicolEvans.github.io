@@ -25,13 +25,19 @@
   <body>
 
 <!-- Navigation -->
-    <nav>
-      <ul class="container topnav">
-        <li class="logo"><a href="index.html"><img class="ne" src="images/NE-logo-teal.png" alt="Nicole Evans logo"></a></li>
-        <li class="about"><a class="topnav about" href="about.html">about</a></li>
-        <li class="contact"><a class="topnav" href="mailto:niclsevans@gmail.com">contact me</a></li>
-      </ul>
-    </nav>
+<nav>
+  <ul class="container topnav">
+    <li class="logo"><a href="index.html"><img class="ne" src="images/NE-logo-teal.png" alt="Nicole Evans logo"></a></li>
+    <li class="about"><a class="topnav" href="about.html">about</a></li>
+    <div class="dropdown">
+      <li onclick="dropDown()" class="dropbtn">projects</li>
+      <div id="dropProjects" class="dropdown-content">
+        <a href="cache.html">CACHE</a>
+      </div>
+    </div>
+    <li class="contact"><a class="topnav contact" href="mailto:niclsevans@gmail.com">say hi</a></li>
+  </ul>
+</nav>
 
     <main>
 <!-- hero -->
@@ -583,6 +589,9 @@
 
     <!-- lightbox -->
     <script src="scripts/lightbox.js"></script>
+
+    <!-- dropdown -->
+    <script src="scripts/dropdown.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120623551-1"></script>

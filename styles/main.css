@@ -58,15 +58,46 @@ img.ne {
 }
 
 .about {
-  grid-column-start: 5;
+  grid-column-start: 6;
   grid-row-start: 2;
   margin-top: 12px;
+}
+
+.dropdown {
+  color: hsla(189, 97%, 14%, 1.0);
+  display: inline-block;
+  grid-column-start: 7;
+  grid-row-start: 2;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: hsla(20, 100%, 95%, 1.0);
+  display: none;
+  margin-left: -2em;
+  margin-top: .75em;
+  min-width: 12em;
+  position: absolute;
+  z-index: 100;
+}
+
+.dropdown-content a {
+  color: hsla(189, 97%, 14%, 1.0);
+  display: block;
+  padding: 1.5em 1.75em;
+  text-decoration: none;
+}
+
+.show {
+  display: block;
 }
 
 li.contact {
   border: 0.09em solid hsla(189, 97%, 14%, 1.0);
   box-sizing: border-box;
-  grid-column: 6 / -1;
+  grid-column: 8 / -1;
   grid-row-start: 2;
   height: auto;
   margin: 2px 8px 0px 2px;
@@ -349,6 +380,10 @@ h6.footer {
   .about {
     grid-column-start: 11;
     padding-top: 0.5em;
+  }
+
+  .dropdown {
+    grid-column-start: 11;
   }
 
   li.contact {
