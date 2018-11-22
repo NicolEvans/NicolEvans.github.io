@@ -109,6 +109,16 @@ a.contact {
   padding: .5em;
 }
 
+.projectdrop {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:hover.topnav, li:hover.topnav {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
@@ -284,6 +294,10 @@ h6.footer {
     padding-bottom: 5em;
   }
 
+  .abouthome {
+    grid-column-start: 7;
+  }
+
   .about {
     grid-column-start: 7;
   }
@@ -408,11 +422,6 @@ h6.footer {
     margin: 0.5em;
     padding: 0.65em .5em .5em .5em;
     text-align: center;
-  }
-
-  a:hover.topnav, li:hover.topnav {
-    font-weight: bold;
-    text-transform: uppercase;
   }
 
   h1.landing {
