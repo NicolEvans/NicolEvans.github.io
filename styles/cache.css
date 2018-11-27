@@ -104,25 +104,20 @@ h3.problem {
 }
 
 section.process {
+  background-image: url(../images/cache/process-banner-long.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 75px 40px 125px 35px;
+  grid-template-rows: 4em auto auto 4em;
   margin-top: 3em;
-}
-
-article.process {
-  background-image: url(../images/cache/process-banner-long.png);
-  background-repeat: none;
-  background-size: cover;
-  height: 275px;
-  grid-column: 1 / -1;
-  grid-row: auto;
 }
 
 h2.process {
   color: hsla(189, 97%, 14%, 1.0);
   grid-column: 1 / -1;
   grid-row-start: 2;
+  padding: .75em 0;
 }
 
 ul.process {
@@ -137,7 +132,12 @@ ul.process {
 
  li.process {
    display: inline-block;
-   padding-right: 4em;
+   line-height: 175%;
+   padding-right: 2em;
+ }
+
+ .non-p {
+   display: none;
  }
 
  .sticky {
@@ -153,6 +153,15 @@ ul.process {
    top: 2em;
    width: 100%;
  }
+
+.sticky-non-p {
+  color: hsla(189, 97%, 14%, 1.0);
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding-right: 2em;
+  position: relative;
+}
 
  .offset {
    content: " ";
@@ -368,8 +377,12 @@ h2.conclusion {
   }
 
 @media screen and (min-width: 475px) {
+    section.process {
+      grid-template-rows: 2em auto auto 3em;
+    }
+
     li.process {
-      display: block;
+      padding-right: 2.5em;
     }
 
     .sticky {
@@ -377,7 +390,6 @@ h2.conclusion {
       line-height: 150%;
       margin-top: 1em;
     }
-
     .offset {
       content: " ";
       display: block;
@@ -540,7 +552,7 @@ h2.conclusion {
 
   /* Process */
   section.process {
-    display: grid;
+    background-image: url(../images/process-banner.png);
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 20px;
     grid-template-rows: 2em 1.5em 2.5em 1.5em 1.5em 2.5em;
@@ -550,6 +562,7 @@ h2.conclusion {
   h2.process {
     grid-column-start: 3;
     grid-row-start: 3;
+    padding: 0;
   }
 
   ul.process {
@@ -585,6 +598,10 @@ h2.conclusion {
     top: 2em;
     width: 100%;
     z-index: 100;
+  }
+
+  .sticky-non-p {
+    padding-right: 4em;
   }
 
   .offset {
