@@ -95,7 +95,6 @@ h3.problem {
   cursor: pointer;
   display: inline-block;
   font-family: 'Poppins', sans-serif;
-  font-weight: regular;
   height: auto;
   letter-spacing: .1em;
   margin-left: 16px;
@@ -190,8 +189,10 @@ h3 {
 }
 
 h4 {
+  border-bottom: .08em solid hsla(174, 31%, 73%, 1.0);
   margin-bottom: .75em;
   margin-top: 2em;
+  padding-bottom: .25em;
 }
 
 a {
@@ -443,7 +444,7 @@ h2.conclusion {
   }
 
   h4 {
-    margin-top: 0;
+    margin: 0 0 1em 0;
   }
 
   img {
@@ -461,7 +462,7 @@ h2.conclusion {
     padding-top: 5em;
   }
 
-  h2, h3, h4, h5 {
+  h2, h3, h5 {
     margin-left: 0;
     margin-right: 0;
   }
