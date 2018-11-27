@@ -55,6 +55,7 @@
       </section>
 
 <!-- Problem Solution -->
+      <a name="overview" class="offset"></a>
       <section>
         <article class="prob-sol">
           <div class="problem">
@@ -86,10 +87,16 @@
           <div class="p-banner"></div>
           <h2 class="process">The Process</h2>
           <ul id="p-menu" class="process">
+            <div id="top" class="non-p">
+              <li><a href="#overview">Overview</a></li>
+            </div>
             <li class="process"><a href="#research">Research</a></li>
             <li class="process"><a href="#information-architecture">Information Architecture</a></li>
             <li class="process"><a href="#branding">Branding</a></li>
             <li class="process"><a href="#high-fidelity">High Fidelity Prototype</a></li>
+            <div id="bottom" class="non-p">
+              <li><a href="#conclusion">Conclusion</a></li>
+            </div>
           </ul>
       </section>
 
@@ -495,6 +502,7 @@
     </section>
 
 <!-- Conclusion -->
+      <a name="conclusion" class="offset"></a>
       <section class="conclusion">
         <article class="conclusion">
         </article>
@@ -561,31 +569,7 @@
     </footer>
 
     <!-- sticky nav -->
-    <script>
-      function onReady() {
-        var pMenu = document.getElementById('p-menu');
-        var didScroll = false;
-        window.onscroll = function() {pNav()};
-        var sticky = pMenu.offsetTop;
-        function pNav() {
-          didScroll = true;
-        }
-        setInterval(function () {
-          if(didScroll) {
-            didScroll = false;
-            if (window.pageYOffset >= sticky) {
-              pMenu.className = 'sticky'
-            } else {
-              pMenu.classList = ('process');
-            }
-          }
-        }, 250);
-      }
-      window.onload = function() {
-        onReady();
-      }
-    </script>
-
+    <script src="scripts/sticky-menu.js"></script>
 
     <!-- lightbox -->
     <script src="scripts/lightbox.js"></script>
