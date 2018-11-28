@@ -122,14 +122,17 @@ h2.process {
   padding: .75em 0;
 }
 
+div.process {
+  grid-column: 1 / -1;
+  grid-row-start: 3;
+  padding-left: 20px;
+}
+
 ul.process {
   color: hsla(189, 97%, 14%, 1.0);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  grid-column: 1 / -1;
-  grid-row-start: 3;;
   line-height: 150%;
-  padding-left: 20px;
  }
 
  li.process {
@@ -154,6 +157,7 @@ ul.process {
    position: fixed;
    top: 2em;
    width: 100%;
+   z-index: 2;
  }
 
  .sticky-non-p {
@@ -419,6 +423,10 @@ h2.conclusion {
       grid-template-rows: 2em auto auto 3em;
     }
 
+    ul.process {
+      line-height: 200%;
+    }
+
     li.process {
       padding-right: 2.5em;
     }
@@ -596,9 +604,13 @@ h2.conclusion {
     padding: 0;
   }
 
-  ul.process {
+  div.process {
     grid-column-start: 3;
     grid-row-start: 4;
+  }
+
+  ul.process {
+    grid-column: 3 / span 12;
     padding-left: 0;
   }
 
@@ -620,15 +632,14 @@ h2.conclusion {
 
   .sticky {
     background-color: hsla(174, 31%, 73%, 1.0);
-    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
     padding-bottom: 1em;
-    padding-left: 13em;
     padding-top: 1em;
     margin-top: 2.15em;
     position: fixed;
     top: 2em;
     width: 100%;
-    z-index: 100;
   }
 
   .sticky-non-p {
