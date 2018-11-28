@@ -80,7 +80,7 @@ img.ne {
   margin-top: .75em;
   min-width: 12em;
   position: absolute;
-  z-index: 100;
+  z-index: 600;
 }
 
 .dropdown-content a {
@@ -103,10 +103,6 @@ li.contact {
   margin: 2px 8px 0px 2px;
   padding: .75em .5em .5em .5em;
   text-align: center;
-}
-
-a.contact {
-  padding: .5em;
 }
 
 .projectdrop {
