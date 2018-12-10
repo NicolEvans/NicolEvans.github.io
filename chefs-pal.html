@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,medium,semibold,bold|Martel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Martel">
 
   </head>
 
@@ -77,7 +77,8 @@
               Messy hands and electronics are no longer an issue when your home assistant can read each step to you.
             </p>
           </div>
-            <a class="button prototype" target="_blank" href="https://invis.io/VAOTAFZQHX9">view prototype</a>
+            <a class="button prototype" target="_blank" href="https://invis.io/VAOTAFZQHX9">view InVision prototype</a>
+            <a class="button coded-proto" target="blank" href="http://nicoleevans.design/coded-prototype-chefspal/">view coded prototype</a>
         </article>
       </section>
 
@@ -90,12 +91,12 @@
               <div id="top" class="non-p">
                 <li><a href="#overview">Overview</a></li>
               </div>
-              <li class="process"><a href="#research">Research</a></li>
-              <li class="process"><a href="#information-architecture">Information Architecture</a></li>
-              <li class="process"><a href="#branding">Branding</a></li>
-              <li class="process"><a href="#high-fidelity">High Fidelity Prototype</a></li>
+              <li id="menu-research" class="process"><a href="#research">Research</a></li>
+              <li id="menu-ia" class="process"><a href="#information-architecture">Information Architecture</a></li>
+              <li id="menu-branding" class="process"><a href="#branding">Branding</a></li>
+              <li id="menu-hifi" class="process"><a href="#high-fidelity">High Fidelity Prototype</a></li>
               <div id="bottom" class="non-p">
-                <li><a href="#conclusion">Conclusion</a></li>
+                <li id="menu-conclusion"><a href="#conclusion">Conclusion</a></li>
               </div>
             </ul>
           </div>
@@ -103,14 +104,15 @@
 
 <!-- Research -->
       <a name="research" class="offset"></a>
-      <section class="research">
+      <section id="section-research" class="research">
         <h3 class="three-fifteen">Research</h3>
 
           <h4 class="surveys">Surveys and Interviews</h4>
           <p class="surveys-p">
             My starting hypothesis was rather broad: at-home cooks struggle with recipe management.
             I conducted a survey to people who cook from recipes at home and held follow-up interviews to evaluate this hypothesis and to try understand how people interact with their recipe collections.
-            It started to become apparent that current issues mainly lie in cooking with digital recipes.
+            <br>
+            The answers did not show any trends in interactions and it started to become apparent that current issues mainly lie in cooking with digital recipes.
             Results placed an emphasis on “no frills cooking” and the frustration of using devices with food-covered hands.
           </p>
           <div class="twocolumn charts">
@@ -118,6 +120,52 @@
             <p>respondents who find their current management method sufficient</p>
             <img class="twocolumn chart-two" src="images/chefs-pal/forty-five-percent.png" alt="Forty-five Percent Doughnut Chart">
             <p class="chart-two">respondents who did not know recipe management applications exist</p>
+          </div>
+        <h6 class="bar-chart">Two recipe interaction survey questions</h6>
+          <div class="bar-chart-1">
+            <p class="bar-heading">&ldquo;I look at the nutritional information for a recipe&rdquo;</p>
+            <div class="bar-one-a">
+              <p class="bar-number">20%</p>
+            </div>
+            <p class="bar-never-a rating">never</p>
+            <div class="bar-two-a">
+              <p class="bar-number">25%</p>
+            </div>
+            <div class="bar-three-a">
+              <p class="bar-number">20%</p>
+            </div>
+            <p class="bar-sometimes-a rating">sometimes</p>
+            <div class="bar-four-a">
+              <p class="bar-number">20%</p>
+            </div>
+            <div class="bar-five-a">
+              <p class="bar-number">15%</p>
+            </div>
+            <p class="bar-always-a rating">always<p>
+            <div class="b-border-a"></div>
+          </div>
+
+          <div class="bar-chart-2">
+            <p class="bar-heading">&ldquo;I prepare more than one recipe at a time&rdquo;</p>
+            <div class="bar-one-b">
+              <p class="bar-number">10%</p>
+            </div>
+            <p class="bar-never-b rating">never</p>
+            <div class="bar-two-b">
+              <p class="bar-number">20%</p>
+            </div>
+            <div class="bar-three-b">
+              <p class="bar-number">50%</p>
+            </div>
+            <p class="bar-sometimes-b rating">sometimes</p>
+            <div class="bar-four-b">
+              <p class="bar-number">15%</p>
+            </div>
+            <div class="bar-five-b">
+              <p class="bar-number">5%</p>
+            </div>
+            <p class="bar-always-b rating">always<p>
+            <div class="b-border-b"></div>
           </div>
 
           <h4 class="c-a">Competitive Analysis</h4>
@@ -174,6 +222,11 @@
               <div>
                 <h6 class="persona">Jean<br>Low Effort Co-Cook</h6>
                 <p class="p-quote">&ldquo;I like things simple; I don’t need all the bells and whistles.&rdquo;</p>
+                <ul class="personas">
+                  <li>ensure healthy recipes for her family</li>
+                  <li>collaborate with her husband on recipes</li>
+                  <li>search their extensive recipe collection by various parameters</li>
+                </ul>
               </div>
             </div>
             <div class="twocolumn persona-two">
@@ -181,6 +234,11 @@
               <div>
                 <h6 class="persona">Martina<br>Old School Kitchen</h6>
                 <p class="p-quote">&ldquo;Using a computer or a phone in the kitchen is so different from what I’m used to.&rdquo;</p>
+                <ul class="personas">
+                  <li>easily find the recipes she prepared for a particular holiday or gathering</li>
+                  <li>work on multiple recipes at once</li>
+                  <li>pass along her family recipes that aren't written down</li>
+                </ul>
               </div>
             </div>
             <div class="twocolumn persona-three">
@@ -188,6 +246,11 @@
               <div>
                 <h6 class="persona">Bobby<br>Weekend Masterchef</h6>
                 <p class="p-quote">&ldquo;I’ll try anything, but I’m very particular about what I like.&rdquo;</p>
+                <ul class="personas">
+                  <li>convert units to weight from volume to be more precise</li>
+                  <li>move seamlessly between computer and phone with different operating systems</li>
+                  <li>prepare a digital grocery list on his phone</li>
+                </ul>
               </div>
             </div>
 
@@ -219,7 +282,7 @@
 
 <!-- Information Architecture -->
       <a name="information-architecture" class="offset"></a>
-      <section class="ia">
+      <section id="section-ia" class="ia">
         <h3 class="three-fifteen">Information Architecture</h3>
 
           <h4 class="userstory">User Stories</h4>
@@ -329,7 +392,7 @@
 
 <!-- Branding -->
       <a name="branding" class="offset"></a>
-      <section class="branding">
+      <section id="section-branding" class="branding">
         <h3 class="three-fifteen">Branding</h3>
           <p class="branding-p1">
             I used three words to help guide the brand identity of Chef’s Pal: Clear, Fresh, and Supportive.
@@ -427,7 +490,7 @@
 
 <!-- High Fidelity Prototype -->
       <a name="high-fidelity" class="offset"></a>
-      <section class="hifi">
+      <section id="section-hifi" class="hifi">
         <h3 class="three-fifteen">High Fidelity Prototype</h3>
           <h4 class="mockups">Mockups</h4>
           <p class="mockup-p1">
@@ -485,11 +548,14 @@
           In the end I felt users would have a better understanding of the application if they were able to perform tasks themselves, not just view a tutorial or video.
           I decided to give all users one recipe in their collection when they signed up so they could fully engage in the application with little setup on their part.
         </p>
+
+        <p class="results-three">new user recents screen</p>
+        <img class="results-three" src="images/chefs-pal/recents-new-member.png" alt="New Member Recents Screen with Starter Recipe">
+
         <p class="results-p4">
           Additionally, testers appreciated that a credit card was not required to sign up for the free trial, but would have appreciated knowing that earlier in the sign up process.
           Not taking a credit card number promotes a relationship of trust, and that we want to help our users and don’t just view them as dollar signs.
         </p>
-        <img class="results-three" src="images/chefs-pal/recents-new-member.png" alt="New Member Recents Screen with Starter Recipe">
 
         <h4 class="updates">Updated Prototypes</h4>
         <p class="update-p">
@@ -511,7 +577,7 @@
         <h2 class="conclusion">Conclusion</h2>
       </section>
 
-      <section class="ending">
+      <section id="ending" class="ending">
         <article class="learnings">
           <h4>Key Learnings</h4>
           <p>
@@ -543,6 +609,7 @@
             I would like to code a prototype that could be tested with a small group of users in a kitchen setting to evaluate the included features.
             I surveyed what features people think they would use, but often times how we think we would use something and how we actually use something can be different.
           </p>
+          <a class="button" target="_blank" href="https://nicoleevans.design/coded-prototype-chefspal/">view coded prototype</a>
         </article>
       </section>
 
@@ -571,6 +638,9 @@
 
     <!-- sticky nav -->
     <script src="scripts/sticky-menu.js"></script>
+
+    <!-- current menu -->
+    <script src="scripts/current.js"></script>
 
     <!-- lightbox -->
     <script src="scripts/lightbox.js"></script>

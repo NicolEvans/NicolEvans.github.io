@@ -85,12 +85,12 @@
               <div id="top" class="non-p">
                 <li><a href="#overview">Overview</a></li>
               </div>
-              <li class="process"><a href="#research">Research</a></li>
-              <li class="process"><a href="#information-architecture">Information Architecture</a></li>
-              <li class="process"><a href="#branding">Branding</a></li>
-              <li class="process"><a href="#high-fidelity">High Fidelity Prototype</a></li>
+              <li id="menu-research" class="process"><a href="#research">Research</a></li>
+              <li id="menu-ia" class="process"><a href="#information-architecture">Information Architecture</a></li>
+              <li id="menu-branding" class="process"><a href="#branding">Branding</a></li>
+              <li id="menu-hifi" class="process"><a href="#high-fidelity">High Fidelity Prototype</a></li>
               <div id="bottom" class="non-p">
-                <li><a href="#conclusion">Conclusion</a></li>
+                <li id="menu-conclusion"><a href="#conclusion">Conclusion</a></li>
               </div>
             </ul>
           </div>
@@ -98,7 +98,7 @@
 
 <!-- Research -->
       <a name="research" class="offset"></a>
-      <section class="research">
+      <section id="section-research" class="research">
         <h3 class="three-fifteen">Research</h3>
           <h4 class="c-a">Competitive Analysis</h4>
           <p class="c-a-p-one">
@@ -166,7 +166,7 @@
 
 <!-- Information Architecture -->
       <a name="information-architecture" class="offset"></a>
-      <section class="ia">
+      <section id="section-ia" class="ia">
         <h3 class="three-fifteen">Information Architecture</h3>
 
           <h4 class="userstory">User Stories</h4>
@@ -272,7 +272,7 @@
 
 <!-- Branding -->
       <a name="branding" class="offset"></a>
-      <section class="branding">
+      <section id="section-branding" class="branding">
         <h3 class="three-fifteen">Branding</h3>
           <p class="branding-p">
             This is a utility application where I wanted to provide a non-distracting environment for users to find what they are looking for.
@@ -339,7 +339,7 @@
 
 <!-- High Fidelity Prototype -->
       <a name="high-fidelity" class="offset"></a>
-      <section class="hifi">
+      <section id="section-hifi" class="hifi">
         <h3 class="three-fifteen">High Fidelity Prototype</h3>
           <p class="hifi-p">
             I took the wireframes and content I created for the marketing website and added visual design.
@@ -416,7 +416,7 @@
 
 <!-- Conclusion -->
       <a name="conclusion" class="offset"></a>
-      <section class="conclusion">
+      <section id="ending" class="conclusion">
         <article class="conclusion">
         </article>
         <div class="c-banner"></div>
@@ -473,6 +473,9 @@
 
     <!-- sticky nav -->
     <script src="scripts/sticky-menu.js"></script>
+
+    <!-- current menu -->
+    <script src="scripts/current.js"></script>
 
     <!-- lightbox -->
     <script src="scripts/lightbox.js"></script>

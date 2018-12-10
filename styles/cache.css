@@ -130,13 +130,12 @@ ul.process {
   color: hsla(189, 97%, 14%, 1.0);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  line-height: 150%;
  }
 
  li.process {
    display: inline-block;
-   line-height: 175%;
-   padding-right: 2em;
+   line-height: 100%;
+   margin: 0 2em .75em 0;
  }
 
  .non-p {
@@ -181,6 +180,10 @@ ul.process {
    height: 110px;
    margin-top: -110px;
    visibility: hidden;
+ }
+
+ .current {
+   border-bottom: .25em solid hsla(189, 97%, 14%, 1.0);
  }
 
 h2 {
@@ -392,7 +395,7 @@ h2.conclusion {
     }
 
     li.process {
-      padding-right: 2.5em;
+      margin-right: 2.5em;
     }
 
     .sticky {
@@ -586,7 +589,8 @@ h2.conclusion {
 
   li.process {
     display: inline-block;
-    padding-right: 4em;
+    margin-bottom: 0;
+    margin-right: 4em;
   }
 
   article.process {
@@ -670,6 +674,10 @@ h2.conclusion {
   .surveys-p {
     grid-column: 3 / 9;
     grid-row-start: 6;
+  }
+
+  img.twocolumn {
+    margin-top: -.05em;
   }
 
   .charts {

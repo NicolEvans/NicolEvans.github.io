@@ -20,6 +20,7 @@ function onReady() {
         top.classList = ('non-p'),
         bottom.classList = ('non-p');
       }
+      highlightNavMenu();
     }
   }, 250);
 }
