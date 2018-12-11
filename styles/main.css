@@ -63,8 +63,14 @@ img.ne {
   margin-top: 12px;
 }
 
+.aboutabout {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .dropdown {
   color: hsla(189, 97%, 14%, 1.0);
+  cursor: pointer;
   display: inline-block;
   grid-column-start: 7;
   grid-row-start: 2;
@@ -78,7 +84,7 @@ img.ne {
   display: none;
   margin-left: -2em;
   margin-top: .75em;
-  min-width: 12em;
+  min-width: 13em;
   position: absolute;
   z-index: 600;
 }
@@ -86,8 +92,18 @@ img.ne {
 .dropdown-content a {
   color: hsla(189, 97%, 14%, 1.0);
   display: block;
-  padding: 1.5em 1.75em;
+  margin: 1em 0;
+  padding: .75em;
   text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  font-weight: bold;
+}
+
+.dropdownCurrent {
+  background-color: hsla(20, 100%, 88%, 1.0);
+  font-weight: bold;
 }
 
 .show {
@@ -130,7 +146,6 @@ h1.landing {
   padding-left: 16px;
   padding-bottom: 5.5em;
 }
-
 
 h1.aboutme {
   color: hsla(189, 97%, 14%, 1.0);

@@ -421,8 +421,13 @@ h6.persona {
 }
 
 p.p-quote {
-  padding: 0px;
+  padding: 0 0 1em;
   margin: 0;
+}
+
+p.goals {
+  margin: 0;
+  padding: 0;
 }
 
 ul.personas li::before {
@@ -882,8 +887,7 @@ h2.conclusion {
   .offset {
     content: " ";
     display: block;
-    height: 120px;
-    margin-top: -120px;
+    margin-top: -9em;
     visibility: hidden;
   }
 
@@ -1266,8 +1270,8 @@ h2.conclusion {
       4em auto auto 2em auto
       4em auto auto auto auto
       auto 4em auto auto 2em
-      auto auto auto 2em auto
-      2em auto auto auto;
+      auto auto 2em auto auto
+      auto 2em auto auto auto;
   }
 
   .mockups {
@@ -1367,12 +1371,12 @@ h2.conclusion {
 
   .results-p3 {
     grid-column: 3 / 9;
-    grid-row: 26 / span 4;
+    grid-row: 26 / span 3;
   }
 
   .results-p4 {
     grid-column: 3 / 9;
-    grid-row-start: 30;
+    grid-row: 29 / span 2;
   }
 
   p.results-three {
@@ -1382,18 +1386,18 @@ h2.conclusion {
 
   img.results-three {
     grid-column: 11 / 14;
-    grid-row: 27 / span 4;
+    grid-row: 27 / span 5;
     margin: 0;
   }
 
   .updates {
     grid-column: 3 / 15;
-    grid-row-start: 32;
+    grid-row-start: 33;
   }
 
   .update-p {
     grid-column: 3 / 9;
-    grid-row-start: 33;
+    grid-row-start: 34;
   }
 
   a.prototype-2-desktop, a.prototype-2-mobile, a.prototype-2-mobile-work {
@@ -1408,17 +1412,17 @@ h2.conclusion {
 
   .prototype-2-desktop {
     grid-column: 3 / 7;
-    grid-row-start: 34;
+    grid-row-start: 35;
   }
 
   .prototype-2-mobile {
     grid-column: 7 / 11;
-    grid-row-start: 34;
+    grid-row-start: 35;
   }
 
   .prototype-2-mobile-work {
     grid-column: 11 / 15;
-    grid-row-start: 34;
+    grid-row-start: 35;
   }
 
   /* Conclusion */

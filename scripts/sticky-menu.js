@@ -20,7 +20,7 @@ function onReady() {
         pMenu.classList = ('process'),
         top.classList = ('non-p'),
         bottom.classList = ('non-p'),
-        document.getElementById('menu-research').classList.remove('current');
+        removeHighlightNav();
       }
     }
   }, 250);

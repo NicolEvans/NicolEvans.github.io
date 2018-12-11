@@ -34,3 +34,8 @@ function highlightNavMenu() {
     }
   }
 }
+
+function removeHighlightNav() {
+  var current = document.getElementsByClassName('current');
+  current[0].classList.remove('current');
+}

@@ -422,8 +422,7 @@ h2.conclusion {
     .offset {
       content: " ";
       display: block;
-      height: 160px;
-      margin-top: -160px;
+      margin-top: -9em;
       visibility: hidden;
     }
 
