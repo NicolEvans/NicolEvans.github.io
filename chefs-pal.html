@@ -187,8 +187,16 @@
 
           <div class="button swot" onclick="openModal('swotModal');currentSlide(1)">view SWOT</div>
           <div id="swotModal" class="modal">
-            <span class="close cursor" onclick="closeModal('swotModal')">&times;</span>
+
             <div class="modal-content">
+              <div class="lightbox-top">
+                <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="slide-number-container">
+                  <p class="slide-number"></p>
+                </div>
+                <div class="next" onclick="plusSlides(1)">&#10095;</div>
+                <div class="close" onclick="closeModal('swotModal')">&times;</div>
+              </div>
 
               <div class="slides">
                 <div class="numberText">1 / 3</div>
@@ -205,10 +213,6 @@
                 <img class="demo" src="images/chefs-pal/swot-paprika.jpeg" alt="SWOT Analysis of Paprika">
               </div>
           </div>
-
-          <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-          <div class="next" onclick="plusSlides(1)">&#10095;</div>
-
         </div>
 
           <h4 class="personas">Personas</h4>
@@ -256,8 +260,16 @@
 
             <div class="button personas" onclick="openModal('personaModal');currentSlide(1)">view user personas</div>
             <div id="personaModal" class="modal">
-              <span class="close cursor" onclick="closeModal('personaModal')">&times;</span>
+
               <div class="modal-content">
+                <div class="lightbox-top">
+                  <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+                  <div class="slide-number-container">
+                    <p class="slide-number"></p>
+                  </div>
+                  <div class="next" onclick="plusSlides(1)">&#10095;</div>
+                  <div class="close" onclick="closeModal('personaModal')">&times;</div>
+                </div>
 
                 <div class="slides">
                   <div class="numberText">1 / 3</div>
@@ -274,8 +286,7 @@
                   <img class="demo" src="images/chefs-pal/persona-bobby.png" alt="User Persona Bobby">
                 </div>
               </div>
-              <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-              <div class="next" onclick="plusSlides(1)">&#10095;</div>
+
             </div>
 
       </section>
@@ -294,8 +305,15 @@
           </p>
           <div class="button userstories" onclick="openModal('storyModal', 'storySlides');currentSlide(1)">view user stories</div>
           <div id="storyModal" class="modal">
-            <span class="close cursor" onclick="closeModal('storyModal')">&times;</span>
             <div class="modal-content">
+              <div class="lightbox-top">
+                <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="slide-number-container">
+                  <p class="slide-number"></p>
+                </div>
+                <div class="next" onclick="plusSlides(1)">&#10095;</div>
+                <div class="close" onclick="closeModal('storyModal')">&times;</div>
+              </div>
 
               <div class="slides">
                 <div class="numberText">1 / 2</div>
@@ -307,8 +325,6 @@
                 <img class="demo" src="images/chefs-pal/new-returning-user-stories.jpeg" alt="User Stories for new and returning users">
               </div>
           </div>
-          <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-          <div class="next" onclick="plusSlides(1)">&#10095;</div>
         </div>
 
           <h4 class="userflow">User Flows</h4>
@@ -326,8 +342,19 @@
 
           <div class="button userflows" onclick="openModal('flowsModal');currentSlide(1)">view user flows</div>
           <div id="flowsModal" class="modal">
-            <span class="close cursor" onclick="closeModal('flowsModal')">&times;</span>
             <div class="modal-content">
+              <div class="lightbox-top">
+                <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="slide-number-container">
+                  <p class="slide-number"></p>
+                </div>
+                <div class="next" onclick="plusSlides(1)">&#10095;</div>
+                <div class="close" onclick="closeModal('flowsModal')">&times;</div>
+              </div>
+
+              <div class="caption-container">
+                <p class="caption"></p>
+              </div>
 
               <div class="slides">
                 <div class="numberText">1 / 5</div>
@@ -354,12 +381,6 @@
                 <img class="demo" src="images/chefs-pal/user-flow-edit-features.jpeg" alt="Manage Upgrades Flow">
               </div>
 
-            </div>
-            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-            <div class="next" onclick="plusSlides(1)">&#10095;</div>
-
-            <div class="caption-container">
-              <p class="caption"></p>
             </div>
           </div>
 
@@ -419,8 +440,15 @@
 
           <div class="button branding" onclick="openModal('brandModal');currentSlide(1)">view style guide</div>
           <div id="brandModal" class="modal">
-            <span class="close cursor" onclick="closeModal('brandModal')">&times;</span>
             <div class="modal-content">
+              <div class="lightbox-top">
+                <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="slide-number-container">
+                  <p class="slide-number"></p>
+                </div>
+                <div class="next" onclick="plusSlides(1)">&#10095;</div>
+                <div class="close" onclick="closeModal('brandModal')">&times;</div>
+              </div>
 
               <div class="slides">
                 <div class="numberText">1 / 12</div>
@@ -483,8 +511,6 @@
               </div>
 
             </div>
-            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-            <div class="next" onclick="plusSlides(1)">&#10095;</div>
           </div>
       </section>
 

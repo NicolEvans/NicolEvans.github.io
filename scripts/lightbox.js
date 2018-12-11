@@ -25,6 +25,8 @@
     var modal = document.getElementById(currentModalId);
     var slides = modal.getElementsByClassName('slides');
     var demo = modal.getElementsByClassName('demo');
+    var numberText = modal.getElementsByClassName('numberText');
+    var number = modal.getElementsByClassName('slide-number');
     var captionText = modal.getElementsByClassName('caption');
     if (slides.length === 0) {
       return;
@@ -35,5 +37,6 @@
       slides[i].style.display = 'none';
     }
     slides[slideIndex-1].style.display = 'block';
+    number[0].innerHTML = numberText[slideIndex-1].innerHTML;
     captionText[0].innerHTML = demo[slideIndex-1].alt;
   }
