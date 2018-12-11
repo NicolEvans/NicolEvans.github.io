@@ -14,13 +14,14 @@ function onReady() {
       if (window.pageYOffset >= sticky) {
         pMenu.className = 'sticky',
         top.className = 'sticky-non-p',
-        bottom.className = 'sticky-non-p'
+        bottom.className = 'sticky-non-p',
+        highlightNavMenu()
       } else {
         pMenu.classList = ('process'),
         top.classList = ('non-p'),
-        bottom.classList = ('non-p');
+        bottom.classList = ('non-p'),
+        document.getElementById('menu-research').classList.remove('current');
       }
-      highlightNavMenu();
     }
   }, 250);
 }
