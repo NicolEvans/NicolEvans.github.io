@@ -7,12 +7,6 @@
     document.getElementById(modalId).style.display = 'none';
   }
 
-  document.addEventListener('keydown', function(event) {
-    if (event.keyCode == 27) {
-      document.getElementById(currentModalId).style.display = 'none';
-    };
-  })
-
   var slideIndex = 1;
   var currentModalId = '';
 
@@ -46,3 +40,15 @@
     number[0].innerHTML = numberText[slideIndex-1].innerHTML;
     captionText[0].innerHTML = demo[slideIndex-1].alt;
   }
+
+  document.addEventListener('keydown', function(event) {
+    if (event.keyCode == 27) {
+      document.getElementById(currentModalId).style.display = 'none';
+    };
+    if (event.keyCode == 37) {
+      plusSlides(-1);
+    };
+    if (event.keyCode == 39) {
+      plusSlides(1);
+    }
+  })
