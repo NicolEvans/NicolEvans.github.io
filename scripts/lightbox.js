@@ -7,6 +7,12 @@
     document.getElementById(modalId).style.display = 'none';
   }
 
+  document.addEventListener('keydown', function(event) {
+    if (event.keyCode == 27) {
+      document.getElementById(currentModalId).style.display = 'none';
+    };
+  })
+
   var slideIndex = 1;
   var currentModalId = '';
 
