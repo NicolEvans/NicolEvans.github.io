@@ -50,5 +50,5 @@
     };
     if (event.keyCode == 39) {
       plusSlides(1);
-    }
+    };
   })
