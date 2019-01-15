@@ -47,7 +47,7 @@ a.topnav {
 }
 
 li.logo {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   grid-row: 1 / span 3;
   margin: 8px auto auto 16px;
 }
@@ -57,22 +57,37 @@ img.ne {
   width: 55px;
 }
 
-.about {
+.abouthome {
   grid-column-start: 6;
   grid-row-start: 2;
   margin-top: 12px;
 }
 
+.resume {
+  grid-column-start: 7;
+  grid-row-start: 2;
+  margin-top: 12px;
+}
+
 .aboutabout {
+  grid-column-start: 5;
+  grid-row-start: 2;
   font-weight: bold;
+  margin-top: 12px;
   text-transform: uppercase;
+}
+
+.aboutproject {
+  grid-column-start: 5;
+  grid-row-start: 2;
+  margin-top: 12px;
 }
 
 .dropdown {
   color: hsla(189, 97%, 14%, 1.0);
   cursor: pointer;
   display: inline-block;
-  grid-column-start: 7;
+  grid-column-start: 6;
   grid-row-start: 2;
   letter-spacing: 2px;
   margin-top: 12px;
@@ -309,11 +324,27 @@ h6.footer {
     grid-column-start: 7;
   }
 
-  .about {
-    grid-column-start: 7;
+  .resume {
+    grid-column-start: 8;
+  }
+
+  .aboutabout {
+    grid-column-start: 6;
+    grid-row-start: 2;
+    margin-top: 1em;
+  }
+
+  .aboutproject {
+    grid-column-start: 6;
+    grid-row-start: 2;
+    margin-top: 1em;
   }
 
   .dropdown {
+    grid-column-start: 7;
+  }
+
+  .resume {
     grid-column-start: 8;
   }
 
@@ -412,17 +443,34 @@ h6.footer {
   }
 
   .abouthome {
-    grid-column-start: 12;
+    grid-column-start: 11;
     grid-row-start: 2;
-    padding-top: 1.25em;
+    padding-top: 0.5em;
   }
 
-  .about {
+  .resume {
+    grid-column-start: 12;
+    grid-row-start: 2;
+    padding-top: 0.5em;
+  }
+
+  .aboutabout {
+    grid-column-start: 10;
+    padding-top: 0.5em;
+  }
+
+  .aboutproject {
+    grid-column-start: 10;
+    padding-top: 0.5em;
+  }
+  }
+
+  .dropdown {
     grid-column-start: 11;
     padding-top: 0.5em;
   }
 
-  .dropdown {
+  .resume {
     grid-column-start: 12;
     padding-top: 0.5em;
   }
