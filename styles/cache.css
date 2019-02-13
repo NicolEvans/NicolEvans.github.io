@@ -154,7 +154,7 @@ ul.process {
    position: fixed;
    top: 2em;
    width: 100%;
-   z-index: 2;
+   z-index: 5;
  }
 
 .sticky-non-p {
