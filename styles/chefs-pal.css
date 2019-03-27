@@ -1344,11 +1344,13 @@ h2.conclusion {
   img.tags-one {
     grid-column: 3 / 6;
     grid-row-start: 10;
+    margin-top: -.1em;
   }
 
   p.tags-two {
     grid-column: 7 / 11;
     grid-row-start: 9;
+    margin-bottom: 3em;
   }
 
   img.tags-two {
@@ -1365,6 +1367,7 @@ h2.conclusion {
   img.tags-three {
     grid-column: 12 / 15;
     grid-row-start: 10;
+    margin-top: -.1em;
   }
 
   .prototype {

@@ -250,17 +250,19 @@ a.wireframes {
   max-height: 5em;
 }
 
-.wireframe-one, .wireframe-two, .wireframe-three {
-  padding-bottom: 5em;
+.buffer-small {
+  padding-bottom: 3em;
+}
+
+.buffer-big {
+  padding-bottom: 6em;
 }
 
 .prototype-bottom, div.intros {
   margin-bottom: 4em;
 }
 
-p.branding-one, p.branding-two, p.branding-three, p.branding-four,
-p.wireframe-one, p.wireframe-two, p.wireframe-three,
-p.results-one, p.results-two, p.results-three {
+p.image {
   font-family: 'Poppins', sans-serif;
   font-size: .9em;
   letter-spacing: .2em;
@@ -270,9 +272,6 @@ p.results-one, p.results-two, p.results-three {
   text-transform: uppercase;
 }
 
-img.results-one, img.results-two, img.results-three {
-  margin-bottom: 3em;
-}
 
 div.branding {
   margin-top: 1.5em;
@@ -453,6 +452,10 @@ h2.conclusion {
     .modal-content {
       max-width: 100%;
       padding-bottom: 2em;
+    }
+
+    .button {
+      margin-bottom: 3em;
     }
 
 @media screen and (min-width: 991px) {
@@ -806,36 +809,72 @@ h2.conclusion {
     grid-row: 17 /span 3;
   }
 
+  p.wireframe-one-sketch {
+    grid-column: 6 / 9;
+    grid-row-start: 21;
+    padding-bottom: .5em;
+  }
+
+  img.wireframe-one-sketch {
+    grid-column: 6 / 9;
+    grid-row-start: 22;
+    margin-top: -.1em;
+  }
+
   p.wireframe-one {
-    grid-column: 6 / 12;
+    grid-column: 9 / 12;
     grid-row-start: 21;
     padding-bottom: .5em;
   }
 
   img.wireframe-one {
-    grid-column: 6 / 12;
+    grid-column: 9 / 12;
     grid-row-start: 22;
   }
 
+  p.wireframe-two-sketch {
+    grid-column: 6 / 9;
+    grid-row-start: 23;
+    padding-bottom: .5em;
+  }
+
+  img.wireframe-two-sketch {
+    grid-column: 6 / 9;
+    grid-row-start: 24;
+    margin-top: -.1em;
+  }
+
   p.wireframe-two {
-    grid-column: 6 / 12;
+    grid-column: 9 / 12;
     grid-row-start: 23;
     padding-bottom: .5em;
   }
 
   img.wireframe-two {
-    grid-column: 6 / 12;
+    grid-column: 9 / 12;
     grid-row-start: 24;
   }
 
+  p.wireframe-three-sketch {
+    grid-column: 6 / 9;
+    grid-row-start: 25;
+    padding-bottom: .5em;
+  }
+
+  img.wireframe-three-sketch {
+    grid-column: 6 / 9;
+    grid-row-start: 26;
+    margin-top: -.1em;
+}
+
   p.wireframe-three {
-    grid-column: 6 / 12;
+    grid-column: 9 / 12;
     grid-row-start: 25;
     padding-bottom: .5em;
   }
 
   img.wireframe-three {
-    grid-column: 6 / 12;
+    grid-column: 9 / 12;
     grid-row-start: 26;
   }
 
@@ -923,8 +962,8 @@ h2.conclusion {
       auto auto auto 2em 2em
       auto 5em auto auto 4em
       auto auto 3em auto auto
-      1em auto auto 4em auto
-      auto 4em auto auto 3em;
+      1em auto auto 5em auto
+      auto 5em auto auto 3em;
   }
 
   .hifi-p {
@@ -975,39 +1014,76 @@ h2.conclusion {
   }
 
 
-  p.results-one {
-    grid-column: 5 / 12;
+  p.results-one-first {
+    grid-column: 4 / 9;
     grid-row-start: 17;
     margin-bottom: 1em;
     text-align: center;
   }
 
-  img.results-one {
-    grid-column: 5 / 12;
+  img.results-one-first {
+    grid-column: 4 / 9;
+    grid-row-start: 18;
+    margin-top: -.1em;
+  }
+
+  p.results-one-last {
+    grid-column: 9 / 14;
+    grid-row-start: 17;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  img.results-one-last {
+    grid-column: 9 / 14;
     grid-row-start: 18;
   }
 
-  p.results-two {
-    grid-column: 5 / 12;
+  p.results-two-first {
+    grid-column: 4 / 9;
     grid-row-start: 20;
     margin-bottom: 1em;
     text-align: center;
   }
 
-  img.results-two {
-    grid-column: 5 / 12;
+  img.results-two-first {
+    grid-column: 4 / 9;
     grid-row-start: 21;
   }
 
-  p.results-three {
-    grid-column: 5 / 12;
+  p.results-two-last {
+    grid-column: 9 / 14;
+    grid-row-start: 20;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  img.results-two-last {
+    grid-column: 9 / 14;
+    grid-row-start: 21;
+  }
+
+  p.results-three-first {
+    grid-column: 4 / 9;
     grid-row-start: 23;
     margin-bottom: 1em;
     text-align: center;
   }
 
-  img.results-three {
-    grid-column: 5 / 12;
+  img.results-three-first {
+    grid-column: 4 / 9;
+    grid-row-start: 24;
+  }
+
+  p.results-three-last {
+    grid-column: 9 / 14;
+    grid-row-start: 23;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  img.results-three-last {
+    grid-column: 9 / 14;
     grid-row-start: 24;
   }
 
