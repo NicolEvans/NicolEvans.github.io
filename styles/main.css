@@ -1,10 +1,10 @@
 body {
   font-family: 'Martel', serif;
   font-size: 16px;
+  font-weight: 400;
 }
 
 header {
-  background: linear-gradient(180deg, hsla(21, 100%, 82%, 0.9), hsla(0, 0%, 100%, 0.9));
   height: auto;
   text-align: left;
 }
@@ -14,6 +14,7 @@ a {
 }
 
 #topBar {
+  background: linear-gradient(180deg, hsla(21, 100%, 82%, 1.0), hsla(0, 0%, 100%, 1.0));
   position: fixed;
   width: 100%;
 }
@@ -146,20 +147,21 @@ a:hover.topnav, li:hover.topnav {
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
 h1.landing {
   color: hsla(189, 97%, 14%, 1.0);
+  font-family: 'Martel', serif;
   font-size: 1.65em;
-  font-weight: bold;
-  grid-column: 1 / 9;
+  font-weight: 900;
+  grid-column: 1 / 10;
   grid-row-start: 2;
   line-height: 140%;
-  padding-top: 6em;
+  padding-top: 7em;
   padding-left: 16px;
-  padding-bottom: 5.5em;
+  padding-bottom: 7em;
 }
 
 h1.aboutme {
@@ -190,94 +192,92 @@ a.aboutme {
   text-align: center;
 }
 
-.cases {
+section.cases-header {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column-gap: 16px;
-  grid-template-rows: 50px 200px 200px 25px 200px 200px;
-  margin-bottom: 2em;
-  padding: 0px 16px 0px 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2em 1.75em 1.25em 1.75em 2em;
+  width: 100%;
 }
 
-h3 {
+article.cases-header {
+  background-image: url(../images/conclusion-background.png);
+  background-size: cover;
+  background-repeat: none;
+  grid-column: 1 / -1;
+  height: 141px;
+}
+
+.cases-banner {
+  background-color: hsla(174, 31%, 73%, 1.0);
+  grid-column: 1 / -1;
+  grid-row: 2 / span 3;
+}
+
+h2.cases-header {
+  color: hsla(189, 97%, 14%, 1.0);
   font-size: 1.25em;
-}
-
-h3.featured {
   font-weight: 600;
   grid-column: 1 / -1;
-  color: hsla(189, 97%, 14%, 1.0);
+  grid-row-start: 3;
+  margin: auto 16px;
 }
 
-a.chefs-pal {
-  background-image: url("../images/cp-home-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column: 1 / -1;
-  grid-row: 2 / span 2;
+.cases {
+  margin: 4em 2em;
 }
 
-a.cache {
-  background-image: url("../images/cache-square.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column: 1 / -1;
-  grid-row: 5 / span 2;
+.chefs-pal {
+  border-bottom: .2em solid hsla(174, 31%, 73%, 1.0);
+  margin-bottom: 5em;
 }
 
-.casegrid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 200px 200px;
-  grid-column-gap: 8px;
+.cp-logo {
+  display: block;
+  margin: 3em auto;
+  width: 80%;
 }
 
-.title {
-  color: hsla(0, 100%, 100%, 1.0);
-  grid-column: auto / span 2;
-  padding: 1em;
-}
-
-.project {
-  font-weight: 400;
-  letter-spacing: 1.25px;
-  line-height: 150%;
+.cp {
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 
 .description {
-  font-size: 0.75em;
   font-weight: 400;
-  letter-spacing: 1.25px;
-  line-height: 115%;
-  padding-right: .5em;
+  line-height: 150%;
+  padding: 3em 0;
 }
 
-.view {
-  color: hsla(0, 100%, 100%, 1.0);
-  font-weight: 400;
-  grid-column: 5 / 8;
-  grid-row-start: 2;
-  letter-spacing: 1.25px;
-  padding-top: 35%;
+.button {
+  align-items: center;
+  border: .1em solid hsla(8, 100%, 62%, 1.0);
+  box-sizing: border-box;
+  color: hsla(0, 0%, 0%, 1.0);
+  cursor: pointer;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: .75em;
+  justify-content: center;
+  letter-spacing: .1em;
+  margin: 0 auto 6em;
+  min-height: 2.5em;
+  max-height: none;
+  max-width: 75%;
+  padding: 1em 2em 1em 2em;
 }
 
-/* project placeholders
-a.projecttwo {
-  background-image: url("../images/p2-square.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column: 1 / -1;
-  grid-row: 5 / span 2;
+.cache-logo {
+  display: block;
+  margin: 5em auto 3em;
+  width: 60%;
 }
 
-a.projectthree {
-  background-image: url("../images/p3-square.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column: 1 / -1;
-  grid-row: 8 / span 2;
+.cache {
+  display: block;
+  margin: auto;
+  width: 100%;
 }
-*/
 
 footer {
   background: linear-gradient(90deg, hsla(189, 97%, 14%, 1.0), hsla(179, 100%, 23%, 1.0));
