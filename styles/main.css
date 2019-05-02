@@ -194,7 +194,7 @@ a.aboutme {
 
 section.cases-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 2em 1.75em 1.25em 1.75em 2em;
   width: 100%;
 }
@@ -216,17 +216,17 @@ article.cases-header {
 h2.cases-header {
   color: hsla(189, 97%, 14%, 1.0);
   font-size: 1.25em;
-  font-weight: 600;
+  font-weight: bold;
   grid-column: 1 / -1;
   grid-row-start: 3;
   margin: auto 16px;
 }
 
-.cases {
+section.cases {
   margin: 4em 2em;
 }
 
-.chefs-pal {
+article.chefs-pal {
   border-bottom: .2em solid hsla(174, 31%, 73%, 1.0);
   margin-bottom: 5em;
 }
@@ -237,10 +237,18 @@ h2.cases-header {
   width: 80%;
 }
 
-.cp {
+.cp-mobile {
   display: block;
   margin: auto;
   width: 100%;
+}
+
+.cp-desktop {
+  display: none;
+}
+
+h3.cp, h3.cache {
+  display: none;
 }
 
 .description {
@@ -273,10 +281,14 @@ h2.cases-header {
   width: 60%;
 }
 
-.cache {
+.cache-mobile {
   display: block;
   margin: auto;
   width: 100%;
+}
+
+.cache-desktop {
+  display: none;
 }
 
 footer {
@@ -354,32 +366,34 @@ h6.footer {
 
   h1.landing {
     font-size: 1.65em;
+    grid-column: 2 / span 7;
     line-height: 150%;
   }
 
-  a.chefs-pal {
-    background-image: url("../images/cp-home.png");
+  h2.cases-header {
+    grid-column: 2 / -1;
   }
 
-  a.cache {
-    background-image: url("../images/Cache_rectangle.png");
+  section.cases {
+    margin: 4em 5em;
   }
 
-  .casegrid {
-    grid-template-rows: repeat(16, 25px);
+  .cp-logo {
+    width: 50%;
   }
 
-  .title {
-    grid-column: 1 / span 3;
+  .description {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
   }
 
-  .view {
-    font-size: .75em;
-    grid-column: 1 /span 2;
-    grid-row-start: 7;
-    letter-spacing: 1px;
-    padding-left: 1em;
-    padding-top: 0;
+  .button {
+    width: 50%;
+  }
+
+  .cache-logo {
+    width: 40%;
   }
 
   h1.aboutme {
@@ -488,81 +502,178 @@ h6.footer {
     line-height: 140%;
   }
 
-  .cases {
+  section.cases-header {
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      grid-column-gap: 20px;
+    }
+
+  article.cases-header {
+    background-image: url(../images/process-banner.png);
+  }
+
+  h2.cases-header {
+    grid-column: 3 / 15;
+  }
+
+  section.cases {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 20px;
-    grid-template-rows: auto 500px;
-    grid-row-gap: 35px;
+    grid-template-rows:
+      5em auto 5em auto 3em;
+    margin: 0;
   }
 
-  h3 {
-    font-size: 1.5em;
+/* Chef's Pal */
+  article.chefs-pal {
+    grid-column: 3 / 15;
+    grid-row: 2;
   }
 
-  h3.featured {
-    color: hsla(189, 97%, 14%, 1.0);
-    grid-column: 3 / 8;
-  }
-
-  .casegrid {
+  div.chefs-pal, div.cache {
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(5, 100px);
-    grid-column-gap: 16px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:
+      auto auto auto auto auto
+      auto 2em auto auto;
+    margin-bottom: 4em;
   }
 
-  .title {
-    color: hsla(0, 100%, 100%, 1.0);
-    line-height: 175%;
-    grid-column: 1 / span 3;
-    grid-row: auto;
-    padding: 40px 0px 0px 20px;
+  .cp-logo {
+    grid-column: 1 / 5;
+    grid-row: 3 / 8;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    width: 80%;
   }
 
-  .description {
-    font-size: 1em;
-    padding-top: 1em;
+  .cp-mobile {
+    display: none;
   }
 
-  .view {
-    color: hsla(100, 100%, 100%, 1.0);
-    font-size: 1.25em;
-    grid-column: 7 / 11;
-    grid-row-start: 3;
-    letter-spacing: .15em;
+  .cp-desktop {
+    display: block;
+    grid-column: 6 / -1;
+    grid-row: 1 / span 10;
+    width: 100%;
+  }
+
+  h3.cp {
+    border-bottom: .08em solid hsla(174, 31%, 73%, 1.0);
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    grid-column: 1 / 5;
+    grid-row: 3;
     opacity: 0;
-    padding-top: 40px;
-    text-align: center;
+    padding-bottom: .25em;
   }
 
-  a.chefs-pal  {
-    background-image: url("../images/cp-home.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 3 / 15;
-    grid-row: 2 / auto;
+  p.cp {
+    grid-column: 1 / 5;
+    grid-row: 4 / 6;
+    margin: 0;
+    opacity: 0;
+    padding: 1em 0 0;
+    width: 100%;
   }
 
-  a.cache  {
-    background-image: url("../images/Cache_rectangle.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 3 / 15;
-    grid-row: 3 / auto;
+  a.cp {
+    grid-column: 1 / 5;
+    grid-row: 8;
+    opacity: 0;
   }
 
+  .button {
+    border-width: .125em;
+    font-size: .85em;
+    min-height: 3.5em;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 
-  a:hover.layover .view {
+  div.chefs-pal:hover .cp-logo {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+  }
+
+  div.chefs-pal:hover h3.cp,
+  div.chefs-pal:hover p.cp,
+  div.chefs-pal:hover a.cp {
     opacity: 1.0;
-    transition: all .25s ease-in-out;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
   }
 
-  a:hover.layover {
-    background-image: url("../images/rectangle-hover.png");
-    transition: all .25s ease-in-out;
+/* Cache */
+  article.cache {
+    grid-column: 3 / 15;
+    grid-row: 3;
   }
 
+  .cache-logo {
+    grid-column: 8 / -1;
+    grid-row: 3 / 8;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    width: 50%;
+  }
+
+  .cache-mobile {
+    display: none;
+  }
+
+  .cache-desktop {
+    display: block;
+    grid-column: 1 / 8;
+    grid-row: 1 / span 10;
+    width: 100%;
+  }
+
+  h3.cache {
+    border-bottom: .08em solid hsla(174, 31%, 73%, 1.0);
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    grid-column: 9 / -1;
+    grid-row: 3;
+    opacity: 0;
+    padding-bottom: .25em;
+  }
+
+  p.cache {
+    grid-column: 9 / -1;
+    grid-row: 4 / 6;
+    margin: 0;
+    opacity: 0;
+    padding: 1em 0 0;
+    width: 100%;
+  }
+
+  a.cache {
+    grid-column: 9 / -1;
+    grid-row: 8;
+    opacity: 0;
+  }
+
+  div.cache:hover .cache-logo {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+  }
+
+  div.cache:hover h3.cache,
+  div.cache:hover p.cache,
+  div.cache:hover a.cache {
+    opacity: 1.0;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+  }
+
+/* FOOTER */
   ul.footer {
     grid-column: 3 / 10;
     text-align: left;
