@@ -164,7 +164,7 @@ h1.landing {
   padding-bottom: 7em;
 }
 
-h1.aboutme {
+h2.aboutme {
   color: hsla(189, 97%, 14%, 1.0);
   font-size: 1.25em;
   font-weight: bold;
@@ -396,7 +396,7 @@ h6.footer {
     width: 40%;
   }
 
-  h1.aboutme {
+  h2.aboutme {
       padding-top: 10%;
   }
 
@@ -497,8 +497,8 @@ h6.footer {
   }
 
   h1.landing {
-    font-size: 2em;
-    grid-column: 3 / 10;
+    font-size: 2.5em;
+    grid-column: 3 / 11;
     line-height: 140%;
   }
 
@@ -514,6 +514,7 @@ h6.footer {
 
   h2.cases-header {
     grid-column: 3 / 15;
+    font-size: 1.5em;
   }
 
   section.cases {
@@ -521,7 +522,7 @@ h6.footer {
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 20px;
     grid-template-rows:
-      5em auto 5em auto 3em;
+      5em auto auto 3em;
     margin: 0;
   }
 
@@ -699,6 +700,7 @@ h6.footer {
     text-align: right;
   }
 
+/* about page */
   section.aboutme {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -707,7 +709,7 @@ h6.footer {
     padding-top: 10%;
   }
 
-  h1.aboutme {
+  h2.aboutme {
     font-size: 1.5em;
     grid-column: 3 / 15;
     grid-row-start: 1;
